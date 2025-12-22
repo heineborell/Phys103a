@@ -1,0 +1,3 @@
+#set page(width: auto, height: auto, margin: (x: 5pt, y: 7pt), fill: rgb("#292e42"))
+#set text(fill: rgb("#f0f0f0"))
+$arrow(tau) = arrow(r) times arrow(F) .$

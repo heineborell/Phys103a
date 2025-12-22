@@ -1,0 +1,309 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9718,        301]
+NotebookOptionsPosition[      9050,        283]
+NotebookOutlinePosition[      9479,        300]
+CellTagsIndexPosition[      9436,        297]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", 
+   RowBox[{"t", ",", "x", ",", "y", ",", "P"}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"x", "[", "t_", "]"}], "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "0.31"}], "*", 
+     SuperscriptBox["t", "2"]}], "+", 
+    RowBox[{"7.2", "*", "t"}], "+", "28"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"y", "[", "t_", "]"}], "=", 
+   RowBox[{
+    RowBox[{"0.22", 
+     SuperscriptBox["t", "2"]}], "-", 
+    RowBox[{"9.1", "t"}], "+", "30"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"P", "[", "t_", "]"}], "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"x", "[", "t", "]"}], ",", 
+     RowBox[{"y", "[", "t", "]"}]}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"V", "[", "t_", "]"}], "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"x", "'"}], "[", "t", "]"}], ",", 
+     RowBox[{
+      RowBox[{"y", "'"}], "[", "t", "]"}]}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"A", "[", "t_", "]"}], " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"x", "''"}], "[", "t", "]"}], ",", 
+     RowBox[{
+      RowBox[{"y", "''"}], "[", "t", "]"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"curveplot", "=", 
+    RowBox[{"ParametricPlot", "[", 
+     RowBox[{
+      RowBox[{"P", "[", "t", "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"t", ",", "0", ",", "25"}], "}"}], ",", 
+      RowBox[{"PlotStyle", "->", 
+       RowBox[{"Thickness", "[", "0.01", "]"}]}]}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\n", 
+ RowBox[{
+  RowBox[{"ar", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"P", "[", "t", "]"}], ",", 
+       RowBox[{
+        RowBox[{"P", "[", "t", "]"}], "+", 
+        RowBox[{"V", "[", "t", "]"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "25", ",", "1.5"}], "}"}]}], "]"}]}], 
+  ";"}], "\n", 
+ RowBox[{"Show", "[", 
+  RowBox[{"curveplot", ",", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Arrowheads", "[", "Small", "]"}], ",", 
+      RowBox[{"Arrow", "[", "ar", "]"}], ",", "Red", ",", 
+      RowBox[{"AbsolutePointSize", "@", "2"}], ",", 
+      RowBox[{"Point", "@", 
+       RowBox[{"ar", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "1"}], "]"}], "]"}]}]}], "}"}], "]"}], ",", 
+   RowBox[{"PlotRange", "->", "All"}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"{", 
+     RowBox[{"\"\<x\>\"", ",", "\"\<y\>\""}], "}"}]}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.950109910775354*^9, 3.950109910777451*^9}, {
+   3.950110113238179*^9, 3.9501102052552023`*^9}, {3.950110275071809*^9, 
+   3.950110281809525*^9}, {3.950110328589232*^9, 3.950110345742983*^9}, {
+   3.950110481115718*^9, 3.9501105157870913`*^9}, {3.950110579184902*^9, 
+   3.950110580051022*^9}, {3.950110646056012*^9, 3.950110646510366*^9}, {
+   3.9501111003580217`*^9, 3.950111114566718*^9}, {3.950111169542177*^9, 
+   3.950111245612461*^9}, 3.950126284614441*^9, 3.95012642422287*^9},
+ CellLabel->
+  "In[287]:=",ExpressionUUID->"ec662d61-09b2-421f-ae1e-c62991a522ec"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ar", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"P", "[", "t", "]"}], ",", 
+       RowBox[{
+        RowBox[{"P", "[", "t", "]"}], "+", 
+        RowBox[{"A", "[", "t", "]"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "25", ",", "2"}], "}"}]}], "]"}]}], 
+  ";"}], "\n", 
+ RowBox[{"Show", "[", 
+  RowBox[{"curveplot", ",", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Arrow", "[", "ar", "]"}], ",", "Red", ",", 
+      RowBox[{"AbsolutePointSize", "@", "2"}], ",", 
+      RowBox[{"Point", "@", 
+       RowBox[{"ar", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "1"}], "]"}], "]"}]}]}], "}"}], "]"}], ",", 
+   RowBox[{"PlotRange", "->", "All"}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"{", 
+     RowBox[{"\"\<x\>\"", ",", "\"\<y\>\""}], "}"}]}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.950110530020227*^9, 3.950110533742482*^9}, {
+  3.950110588918133*^9, 3.9501106168730593`*^9}, {3.9501106675047007`*^9, 
+  3.950110685041038*^9}, {3.950110724621241*^9, 3.950110726553624*^9}, {
+  3.950111290979486*^9, 3.9501112980312567`*^9}},
+ CellLabel->
+  "In[253]:=",ExpressionUUID->"3479851f-ff36-4376-a25c-2ff6d6d31564"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", 
+   RowBox[{"t", ",", "x", ",", "y", ",", "z", ",", "P"}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"x", "[", "t_", "]"}], "=", 
+   RowBox[{"2", " ", 
+    RowBox[{"Sin", "[", "t", "]"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"y", "[", "t_", "]"}], "=", 
+   RowBox[{"6", " ", 
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      RowBox[{"t", "/", "2"}], "]"}], "^", "2"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"z", "[", "t_", "]"}], "=", 
+   RowBox[{"3", " ", 
+    RowBox[{"Cos", "[", "t", "]"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"P", "[", "t_", "]"}], "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"x", "[", "t", "]"}], ",", 
+     RowBox[{"y", "[", "t", "]"}], ",", 
+     RowBox[{"z", "[", "t", "]"}]}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"V", "[", "t_", "]"}], "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"x", "'"}], "[", "t", "]"}], ",", 
+     RowBox[{
+      RowBox[{"y", "'"}], "[", "t", "]"}], ",", 
+     RowBox[{
+      RowBox[{"z", "'"}], "[", "t", "]"}]}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"A", "[", "t_", "]"}], " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"x", "''"}], "[", "t", "]"}], ",", 
+     RowBox[{
+      RowBox[{"y", "''"}], "[", "t", "]"}], ",", 
+     RowBox[{
+      RowBox[{"z", "''"}], "[", "t", "]"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"curveplot", "=", 
+    RowBox[{"ParametricPlot3D", "[", 
+     RowBox[{
+      RowBox[{"P", "[", "t", "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"t", ",", "1", ",", "6"}], "}"}], ",", 
+      RowBox[{"PlotStyle", "->", 
+       RowBox[{"Thickness", "[", "0.01", "]"}]}]}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\n", 
+ RowBox[{
+  RowBox[{"ar", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"P", "[", "t", "]"}], ",", 
+       RowBox[{
+        RowBox[{"P", "[", "t", "]"}], "+", 
+        RowBox[{"V", "[", "t", "]"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "1", ",", "6", ",", ".5"}], "}"}]}], "]"}]}], 
+  ";"}], "\n", 
+ RowBox[{"Show", "[", 
+  RowBox[{"curveplot", ",", 
+   RowBox[{"Graphics3D", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Arrow", "[", "ar", "]"}], ",", "Red", ",", 
+      RowBox[{"AbsolutePointSize", "@", "12"}], ",", 
+      RowBox[{"Point", "@", 
+       RowBox[{"ar", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "1"}], "]"}], "]"}]}]}], "}"}], "]"}], ",", 
+   RowBox[{"PlotRange", "->", "All"}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"{", 
+     RowBox[{"\"\<x\>\"", ",", "\"\<y\>\"", ",", "\"\<z\>\""}], "}"}]}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.950109910775354*^9, 3.950109910777451*^9}, {
+  3.9501127080218687`*^9, 3.9501127283315163`*^9}},
+ CellLabel->
+  "In[296]:=",ExpressionUUID->"57d2485e-d1eb-4fb0-b48e-7c3c513af246"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ar", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"P", "[", "t", "]"}], ",", 
+       RowBox[{
+        RowBox[{"P", "[", "t", "]"}], "+", 
+        RowBox[{"A", "[", "t", "]"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "1", ",", "6", ",", ".5"}], "}"}]}], "]"}]}], 
+  ";"}], "\n", 
+ RowBox[{"Show", "[", 
+  RowBox[{"curveplot", ",", 
+   RowBox[{"Graphics3D", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Arrow", "[", "ar", "]"}], ",", "Red", ",", 
+      RowBox[{"AbsolutePointSize", "@", "12"}], ",", 
+      RowBox[{"Point", "@", 
+       RowBox[{"ar", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "1"}], "]"}], "]"}]}]}], "}"}], "]"}], ",", 
+   RowBox[{"PlotRange", "->", "All"}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"{", 
+     RowBox[{"\"\<x\>\"", ",", "\"\<y\>\"", ",", "\"\<z\>\""}], "}"}]}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.9501127522492933`*^9, 3.9501127525264273`*^9}},
+ CellLabel->
+  "In[274]:=",ExpressionUUID->"8e847c42-27de-46a9-bcda-60430433dc48"]
+},
+WindowSize->{1432, 895},
+WindowMargins->{{40, Automatic}, {Automatic, 10}},
+Magnification:>1.25 Inherited,
+FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"b089f667-1ae6-4af5-a7c1-6b20f5504f6f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 3139, 93, 298, "Input",ExpressionUUID->"ec662d61-09b2-421f-ae1e-c62991a522ec"],
+Cell[3700, 115, 1277, 34, 64, "Input",ExpressionUUID->"3479851f-ff36-4376-a25c-2ff6d6d31564"],
+Cell[4980, 151, 2957, 96, 324, "Input",ExpressionUUID->"57d2485e-d1eb-4fb0-b48e-7c3c513af246"],
+Cell[7940, 249, 1106, 32, 90, "Input",ExpressionUUID->"8e847c42-27de-46a9-bcda-60430433dc48"]
+}
+]
+*)
+
