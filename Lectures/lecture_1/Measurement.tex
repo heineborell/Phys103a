@@ -15,7 +15,7 @@
 \title{Phys103a}
 \subtitle{Measurement}
 \date{\today}
-\author{Deniz Olgu Devecioglu}
+\author{D.O.D}
 \institute{DGIST}
 % \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
 
@@ -29,78 +29,103 @@
     \tableofcontents[hideallsubsections]
   \end{frame}
 }
-\section{Introduction}
+\section{Objectives}
 
-\begin{frame}[fragile]{Metropolis}
+\begin{frame}[fragile]{Objectives}
+  \texttt{
+    \begin{itemize}
+      \item What does physics do?
+      \item Understand units.
+      \item What are the fundamental units.
+      \item Conversions.
+      \item Significant Figures.
+  \end{itemize}}
 
-  The \themename theme is a Beamer theme with minimal visual noise
-  inspired by the
-  \href{https://github.com/hsrmbeamertheme/hsrmbeamertheme}{\textsc{hsrm} Beamer
-  Theme} by Benjamin Weiss.
-
-  Enable the theme by loading
-
-  \begin{verbatim}    \documentclass{beamer}
-    \usetheme{metropolis}\end{verbatim}
-
-  Note, that you have to have Mozilla's \emph{Fira Sans} font and XeTeX
-  installed to enjoy this wonderful typography.
-\end{frame}
-\begin{frame}[fragile]{Sections}
-  Sections group slides of the same topic
-
-  \begin{verbatim}    \section{Elements}\end{verbatim}
-
-  for which \themename provides a nice progress indicator \ldots
 \end{frame}
 
-\section{Title formats}
+\section{Physics and Experiment}
 
-\begin{frame}{Metropolis title formats}
-  \themename supports 4 different title formats:
-  \begin{itemize}
-    \item Regular
-    \item \textsc{Small caps}
-    \item \textsc{all small caps}
-    \item ALL CAPS
-  \end{itemize}
-  They can either be set at once for every title type or individually.
+\begin{frame}{Physics and Experiment}
+  \texttt{
+    \begin{itemize}
+      \item Like all other sciences, physics is based on experimental
+        observations and quantitative measurements.
+
+      \item The main objectives of physics are to identify a limited
+        number of fundamental laws that govern natural phenomena and
+        use them to develop theories that can predict the future
+        experiments. (Search for Thomas Kuhn, Karl Popper).
+
+      \item When there is a discrepancy between the prediction of a
+        theory and experimental results, new or modified theories
+        must be formulated to remove discrepancy.
+
+      \item For example (Newtonian mechanics → Einstein theory of
+        relativity) (Blackbody radiation → Quantum mechanics )
+  \end{itemize}}
 \end{frame}
 
-{
-    \metroset{titleformat frame=smallcaps}
-\begin{frame}{Small caps}
-  This frame uses the \texttt{smallcaps} title format.
+\section{Standarts of Length, Mass, Time}
+\begin{frame}{Standarts of Length, Mass, Time}
+  \texttt{
+  - To describe natural phenomena we need measurements.\\}
 
-  \begin{alertblock}{Potential Problems}
-    \texttt{Be aware the off not every font supports small caps. If for example you typeset your presentation with pdfTeX and the Computer Modern Sans Serif font, every text in small caps will be typeset with the Computer Modern Serif font instead.}
+  \begin{alertblock}{Base quantities}
+
+    \texttt{
+      There are so many physical quantities that it is a problem to
+      organize them. Fortunately, they are not all independent; for
+    example, speed is the ratio of a length to a time.}
 
   \end{alertblock}
+  \texttt{
+    - In mechanics we have three fundamental quantities length,
+    mass and time.\\
+  - In order to reproduce experiments we need standards.}
 \end{frame}
+{
+  \metroset{titleformat frame=smallcaps}
+  \begin{frame}{Small caps}
+    This frame uses the \texttt{smallcaps} title format.
+
+    \begin{alertblock}{Potential Problems}
+      \texttt{Be aware the off not every font supports small caps. If
+        for example you typeset your presentation with pdfTeX and the
+        Computer Modern Sans Serif font, every text in small caps will
+      be typeset with the Computer Modern Serif font instead.}
+
+    \end{alertblock}
+  \end{frame}
 }
 
 {
-\metroset{titleformat frame=allsmallcaps}
-\begin{frame}{All small caps}
-  This frame uses the \texttt{allsmallcaps} title format.
+  \metroset{titleformat frame=allsmallcaps}
+  \begin{frame}{All small caps}
+    This frame uses the \texttt{allsmallcaps} title format.
 
-  \begin{alertblock}{Potential problems}
-    As this title format also uses small caps you face the same problems as with the \texttt{smallcaps} title format. Additionally this format can cause some other problems. Please refer to the documentation if you consider using it.
+    \begin{alertblock}{Potential problems}
+      As this title format also uses small caps you face the same
+      problems as with the \texttt{smallcaps} title format.
+      Additionally this format can cause some other problems. Please
+      refer to the documentation if you consider using it.
 
-    As a rule of thumb: just use it for plaintext-only titles.
-  \end{alertblock}
-\end{frame}
+      As a rule of thumb: just use it for plaintext-only titles.
+    \end{alertblock}
+  \end{frame}
 }
 
 {
-\metroset{titleformat frame=allcaps}
-\begin{frame}{All caps}
-  This frame uses the \texttt{allcaps} title format.
+  \metroset{titleformat frame=allcaps}
+  \begin{frame}{All caps}
+    This frame uses the \texttt{allcaps} title format.
 
-  \begin{alertblock}{Potential Problems}
-    This title format is not as problematic as the \texttt{allsmallcaps} format, but basically suffers from the same deficiencies. So please have a look at the documentation if you want to use it.
-  \end{alertblock}
-\end{frame}
+    \begin{alertblock}{Potential Problems}
+      This title format is not as problematic as the
+      \texttt{allsmallcaps} format, but basically suffers from the
+      same deficiencies. So please have a look at the documentation
+      if you want to use it.
+    \end{alertblock}
+  \end{frame}
 }
 
 \section{Elements}
@@ -110,7 +135,8 @@
 \emph{emphasize} text, \alert{accent} parts
 or show \textbf{bold} results.\end{verbatim}
 
-  \begin{center}becomes\end{center}
+  \begin{center}becomes
+  \end{center}
 
   The theme provides sensible defaults to \emph{emphasize} text,
   \alert{accent} parts or show \textbf{bold} results.
@@ -134,22 +160,27 @@ or show \textbf{bold} results.\end{verbatim}
 \begin{frame}{Lists}
   \begin{columns}[T,onlytextwidth]
     \column{0.33\textwidth}
-      Items
-      \begin{itemize}
-        \item Milk \item Eggs \item Potatoes
-      \end{itemize}
+    Items
+    \begin{itemize}
+      \item Milk
+      \item Eggs
+      \item Potatoes
+    \end{itemize}
 
     \column{0.33\textwidth}
-      Enumerations
-      \begin{enumerate}
-        \item First, \item Second and \item Last.
-      \end{enumerate}
+    Enumerations
+    \begin{enumerate}
+      \item First,
+      \item Second and
+      \item Last.
+    \end{enumerate}
 
     \column{0.33\textwidth}
-      Descriptions
-      \begin{description}
-        \item[PowerPoint] Meeh. \item[Beamer] Yeeeha.
-      \end{description}
+    Descriptions
+    \begin{description}
+      \item[PowerPoint] Meeh.
+      \item[Beamer] Yeeeha.
+    \end{description}
   \end{columns}
 \end{frame}
 \begin{frame}{Animation}
@@ -166,19 +197,19 @@ or show \textbf{bold} results.\end{verbatim}
     \begin{tikzpicture}
       \def\couleur{alerted text.fg}
       \path[coordinate] (0,0)  coordinate(A)
-                  ++( 90:5cm) coordinate(B)
-                  ++(0:5cm) coordinate(C)
-                  ++(-90:5cm) coordinate(D);
+      ++( 90:5cm) coordinate(B)
+      ++(0:5cm) coordinate(C)
+      ++(-90:5cm) coordinate(D);
       \draw[fill=\couleur!\thedensity] (A) -- (B) -- (C) --(D) -- cycle;
       \foreach \x in {1,...,40}{%
-          \pgfmathsetcounter{density}{\thedensity+20}
-          \setcounter{density}{\thedensity}
-          \path[coordinate] coordinate(X) at (A){};
-          \path[coordinate] (A) -- (B) coordinate[pos=.10](A)
-                              -- (C) coordinate[pos=.10](B)
-                              -- (D) coordinate[pos=.10](C)
-                              -- (X) coordinate[pos=.10](D);
-          \draw[fill=\couleur!\thedensity] (A)--(B)--(C)-- (D) -- cycle;
+        \pgfmathsetcounter{density}{\thedensity+20}
+        \setcounter{density}{\thedensity}
+        \path[coordinate] coordinate(X) at (A){};
+        \path[coordinate] (A) -- (B) coordinate[pos=.10](A)
+        -- (C) coordinate[pos=.10](B)
+        -- (D) coordinate[pos=.10](C)
+        -- (X) coordinate[pos=.10](D);
+        \draw[fill=\couleur!\thedensity] (A)--(B)--(C)-- (D) -- cycle;
       }
     \end{tikzpicture}
     \caption{Rotated square from
@@ -206,33 +237,33 @@ or show \textbf{bold} results.\end{verbatim}
 
   \begin{columns}[T,onlytextwidth]
     \column{0.5\textwidth}
-      \begin{block}{Default}
-        Block content.
-      \end{block}
+    \begin{block}{Default}
+      Block content.
+    \end{block}
 
-      \begin{alertblock}{Alert}
-        Block content.
-      \end{alertblock}
+    \begin{alertblock}{Alert}
+      Block content.
+    \end{alertblock}
 
-      \begin{exampleblock}{Example}
-        Block content.
-      \end{exampleblock}
+    \begin{exampleblock}{Example}
+      Block content.
+    \end{exampleblock}
 
     \column{0.5\textwidth}
 
-      \metroset{block=fill}
+    \metroset{block=fill}
 
-      \begin{block}{Default}
-        Block content.
-      \end{block}
+    \begin{block}{Default}
+      Block content.
+    \end{block}
 
-      \begin{alertblock}{Alert}
-        Block content.
-      \end{alertblock}
+    \begin{alertblock}{Alert}
+      Block content.
+    \end{alertblock}
 
-      \begin{exampleblock}{Example}
-        Block content.
-      \end{exampleblock}
+    \begin{exampleblock}{Example}
+      Block content.
+    \end{exampleblock}
 
   \end{columns}
 \end{frame}
@@ -245,10 +276,10 @@ or show \textbf{bold} results.\end{verbatim}
   \begin{figure}
     \begin{tikzpicture}
       \begin{axis}[
-        mlineplot,
-        width=0.9\textwidth,
-        height=6cm,
-      ]
+          mlineplot,
+          width=0.9\textwidth,
+          height=6cm,
+        ]
 
         \addplot {sin(deg(x))};
         \addplot+[samples=100] {sin(deg(2*x))};
@@ -261,18 +292,18 @@ or show \textbf{bold} results.\end{verbatim}
   \begin{figure}
     \begin{tikzpicture}
       \begin{axis}[
-        mbarplot,
-        xlabel={Foo},
-        ylabel={Bar},
-        width=0.9\textwidth,
-        height=6cm,
-      ]
+          mbarplot,
+          xlabel={Foo},
+          ylabel={Bar},
+          width=0.9\textwidth,
+          height=6cm,
+        ]
 
-      \addplot plot coordinates {(1, 20) (2, 25) (3, 22.4) (4, 12.4)};
-      \addplot plot coordinates {(1, 18) (2, 24) (3, 23.5) (4, 13.2)};
-      \addplot plot coordinates {(1, 10) (2, 19) (3, 25) (4, 15.2)};
+        \addplot plot coordinates {(1, 20) (2, 25) (3, 22.4) (4, 12.4)};
+        \addplot plot coordinates {(1, 18) (2, 24) (3, 23.5) (4, 13.2)};
+        \addplot plot coordinates {(1, 10) (2, 19) (3, 25) (4, 15.2)};
 
-      \legend{lorem, ipsum, dolor}
+        \legend{lorem, ipsum, dolor}
 
       \end{axis}
     \end{tikzpicture}
@@ -285,9 +316,10 @@ or show \textbf{bold} results.\end{verbatim}
 \end{frame}
 
 {%
-\setbeamertemplate{frame footer}{My custom footer}
-\begin{frame}[fragile]{Frame footer}
-    \themename defines a custom beamer template to add a text to the footer. It can be set via
+  \setbeamertemplate{frame footer}{My custom footer}
+  \begin{frame}[fragile]{Frame footer}
+    \themename defines a custom beamer template to add a text to the
+    footer. It can be set via
     \begin{verbatim}\setbeamertemplate{frame footer}{My custom footer}\end{verbatim}
 \end{frame}
 }

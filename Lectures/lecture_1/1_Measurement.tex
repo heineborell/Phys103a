@@ -1,0 +1,86 @@
+% !TeX TS-program = lualatex
+\documentclass[aspectratio=169]{beamer}
+
+\usepackage{fontspec}
+\usepackage{unicode-math}
+
+% Text font
+\setsansfont{Iosevka}
+
+% Math font (Fira)
+\setmathfont{Fira Math}
+
+% Optional: make math match sans-serif look better
+\unimathsetup{
+  math-style = ISO,
+  bold-style = ISO
+}
+
+\title{CHP-1 Measurement}
+\author{D.O.D}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Table of contents}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+\section{Objectives}
+
+\begin{frame}[fragile]{Objectives}
+  \begin{itemize}
+    \item What does physics do?
+    \item Understand units.
+    \item What are the fundamental units.
+    \item Conversions.
+    \item Significant Figures.
+  \end{itemize}
+
+\end{frame}
+
+\section{Physics and Experiment}
+
+\begin{frame}{Physics and Experiment}
+  \begin{itemize}
+    \item Like all other sciences, physics is based on experimental
+      observations and quantitative measurements.
+
+    \item The main objectives of physics are to identify a limited
+      number of fundamental laws that govern natural phenomena and
+      use them to develop theories that can predict the future
+      experiments. (Search for Thomas Kuhn, Karl Popper).
+
+    \item When there is a discrepancy between the prediction of a
+      theory and experimental results, new or modified theories
+      must be formulated to remove discrepancy.
+
+    \item For example (Newtonian mechanics → Einstein theory of
+      relativity) (Blackbody radiation → Quantum mechanics )
+  \end{itemize}
+\end{frame}
+\begin{frame}
+  \begin{align}
+    \oint \vec{B} \cdot d\vec{l}& = \mu_0\\
+    \vec F &=m \vec a
+  \end{align}
+\end{frame}
+
+\section{Standarts of Length, Mass, Time}
+\begin{frame}{Standarts of Length, Mass, Time}
+  - To describe natural phenomena we need measurements.\\
+
+  \begin{alertblock}{Base quantities}
+
+    There are so many physical quantities that it is a problem to
+    organize them. Fortunately, they are not all independent; for
+    example, speed is the ratio of a length to a time.
+
+  \end{alertblock}
+  - In mechanics we have three fundamental quantities length,
+  mass and time.\\
+  - In order to reproduce experiments we need standards.
+\end{frame}
+\end{document}

@@ -146,9 +146,10 @@ million years.
   are L, M, and T, respectively.
 - We shall often use brackets [ ] to denote the dimensions of a physical quantity.
 
-```latex +render
- $\text{speed}\rightarrow [v] = \frac{L}{T},\quad\text{area}\rightarrow [A]=L^{2}$
-```
+$=
+  "speed" → [v] = L / T , quad
+  "area"  → [A] = L^2
+$
 
 <!-- pause -->
 
