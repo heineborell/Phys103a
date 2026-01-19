@@ -1,6 +1,0 @@
-#set page(width: auto, height: auto, margin: (x: 5pt, y: 7pt), fill: rgb("#292e42"))
-#set text(fill: rgb("#f0f0f0"))
-#set text(font:"Dejavu Sans Mono",7pt)
-- Note that if the force is perpendicular to the displacement,\ that force does no work.
-- The units of work Joules=Newton x meter.
-- The sign of the work depends on the angle between $F$ and $Delta r$.
