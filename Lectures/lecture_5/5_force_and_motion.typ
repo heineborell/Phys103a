@@ -148,14 +148,16 @@ If two objects interact, the force $ arrow(F_12)$ exerted by the object 1 on obj
 
 
 - Show coordinate system on the force diagram.]
-
+#new-section[Applying Newton's Laws]
 #slide[= Applying Newton's Laws
 
 3- Write the _equations of motion_.
 
 - By equations of motion we mean Newton's equations.
 
-$F_(1 x)+F_(2 x)+  =M a_x$
+$
+F_(1 x)+F_(2 x)+  =M a_x
+$
 - Write the _constraint_ equations. ]
 
 #slide[= Some particular forces
@@ -169,7 +171,7 @@ $F_(1 x)+F_(2 x)+  =M a_x$
 - Tension in the cords, ropes.]
 
 
-#slide[= Examples
+#slide[= Examples 
 
 #figure(
   image("ss_3.png", width: 40%),) ]

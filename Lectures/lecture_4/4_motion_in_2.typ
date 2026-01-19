@@ -117,6 +117,8 @@ a_x=frac(d v_x,d t) quad a_y=frac(d v_y,d t) quad a_z=frac(d v_z, d t)
 $
 ]
 
+#new-section[2D motion with constant acceleration
+]
 #slide[ = 2D motion with constant acceleration
 
 - The motion in two dimensions can be modeled as two independent motions in each of the two perpendicular directions associated with the x and y axes. That is any influence in the y direction does not affect x.
@@ -201,7 +203,7 @@ T=frac(2 pi r,v), quad omega= frac(2\pi,T), quad a_c= r omega^2
 $
 #figure(image("ss_13.png",width: 96%))
 ]
-
+#new-section[Relative Motion]
 #slide[= Relative motion
 
 - A _frame of reference_ can be described by a Cartesian coordinate system for which an observer is at rest with respect to the origin.
