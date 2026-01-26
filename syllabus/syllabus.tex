@@ -1,0 +1,309 @@
+\documentclass[12pt, a4paper]{article}
+%\usepackage{geometry}
+\usepackage[inner=2.0cm,outer=2.0cm,top=2.5cm,bottom=2.5cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx}
+\usepackage{CJKutf8}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\definecolor{red}{rgb}{.98,0,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{\textsc{General Physics II} }}
+\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{\textsc{Bs105a} }}
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE] {page \thepage\ of \pageref{LastPage} }
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+\definecolor{OliveGreen}{cmyk}{0.64,0,0.95,0.40}
+\definecolor{CadetBlue}{cmyk}{0.62,0.57,0.23,0}
+\definecolor{lightlightgray}{gray}{0.93}
+\lstset{
+  %language=bash,                          % Code langugage
+  basicstyle=\ttfamily,                   % Code font, Examples:
+  % \footnotesize, \ttfamily
+  keywordstyle=\color{OliveGreen},        % Keywords font ('*' = uppercase)
+  commentstyle=\color{gray},              % Comments font
+  numbers=left,                           % Line nums position
+  numberstyle=\tiny,                      % Line-numbers fonts
+  stepnumber=1,                           % Step between two line-numbers
+  numbersep=5pt,                          % How far are line-numbers from code
+  backgroundcolor=\color{lightlightgray}, % Choose background color
+  frame=none,                             % A frame around the code
+  tabsize=2,                              % Default tab size
+  captionpos=t,                           % Caption-position = bottom
+  breaklines=true,                        % Automatic line breaking?
+  breakatwhitespace=false,                % Automatic breaks only at whitespace?
+  showspaces=false,                       % Dont make spaces visible
+  showtabs=false,                         % Dont make tabls visible
+  columns=flexible,                       % Column format
+  morekeywords={__global__, __device__},  % CUDA specific keywords
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{center}
+  {\Large \textsc{Bs103a (General Physics I)}}
+\end{center}
+\begin{center}
+  2026 Spring\\
+  DGIST \\
+\end{center}
+%\date{September 26, 2014}
+
+\begin{center}
+  \rule{\textwidth}{0.4pt}
+  \begin{minipage}[t]{\textwidth}
+    \medskip
+    \begin{tabular}{lll}
+      \textbf{Instructor:} & Deniz Olgu Devecio\u{g}lu &  \medskip \\
+      \textbf{Office:} & L06 & \medskip \\
+      \textbf{Contact:} & deniz@dgist.ac.kr & \medskip\\
+      \textbf{Office Hours:} & TBA & \medskip\\
+
+    \end{tabular}\medskip
+  \end{minipage}
+  \rule{\textwidth}{0.4pt}
+\end{center}
+\vspace{.2cm}
+\setlength{\unitlength}{1in}
+\renewcommand{\arraystretch}{2}
+
+\noindent\textbf{Description:}
+This calculus based course provides students with the basic concepts
+of physics that enable them to understand describe and explain
+natural phenomena. Emphasis is laid on general principles and
+fundamental concepts in mechanics with applications of physics in
+various fields of engineering.
+
+\vskip.15in
+\noindent\textbf{Course times:}
+
+\begin{enumerate}
+    All lectures are at E7-241.
+  \item  General Physics II - Section 1 Tuesday 15:00-16:30 /
+    Thursday 15:00-16:30.
+  \item  General Physics II - Section 2 Tuesday 16:30-18:00 /
+    Thursday 16:30-18:00.
+  \item  General Physics II- Section 3 Monday 10:30-12:00 /
+    Wednesday 10:30-12:00.
+\end{enumerate}
+
+\vskip.15in
+
+\noindent\textbf{Course Pages:}
+\begin{enumerate}
+  \item LMS: All course content such as announcements, slides,
+    homework, grades and other required reading will be made
+    available on LMS.
+\end{enumerate}
+
+\vskip.15in
+\noindent\textbf{Teaching Assistants:}
+
+\begin{CJK}{UTF8}{mj} % "mj" = Korean font (MyoungJo)
+  \flushleft
+
+  \begin{CJK}{UTF8}{mj} % "mj" = Korean font (MyoungJo)
+    Section 1: 이태균, email: dlxorbs4150@dgist.ac.kr\\
+    Section 2: 이승우, email: leeseungwoo0313@dgist.ac.kr\\
+    Section 3: 조민서, email: log0114@dgist.ac.kr
+  \end{CJK}
+
+\end{enumerate}
+
+\vskip.15in
+\noindent\textbf{Teaching Materials:}
+
+The first three books will be used as main source depending on topic.
+Since the physics syllabus is highly standardised there is basically
+no difference in terms of topics covered. Check each of them and follow
+the one you like.
+
+\begin{enumerate}
+\item Principles of Physics, Halliday \& Resnick, Eleventh Edition,
+  QC21.3 H35 2020.
+\item Physics for Scientists and Engineers,  Hans C. Ohanian, John
+  T. Markert, 2007.
+\item Physics for Scientists and Engineers with Modern Physics,
+  Raymond Serway & John Jewett, 2013.
+\end{enumerate}
+
+\vskip.35in
+
+\noindent \textbf{Tentative Course Schedule:}
+\begin{center}
+\begin{flushleft}
+  The schedule below is tentative. Any unexpected changes to the
+  schedule will be announced in-class (as the course proceeds).
+
+  \dotfill Week \#1  \\
+  {\color{darkgreen}{\Rectangle}} Mathematical Review; Vector
+  Algebra; Gradient; Divergence;
+  Line, Surface, Volume Integrals. \smallskip \\
+
+  \dotfill Week \#2  \\
+  {\color{darkgreen}{\Rectangle}} Static Electricity; Electric
+  Charge and its Conservation;   Insulators and Conductors;
+  Induced Charge; Coulomb’s Law; The Electric Field. \smallskip \\
+
+  \dotfill Week \#3  \\
+  {\color{darkgreen}{\Rectangle}} Electric Field of a Continuous
+  Charge Distribution; Electric Field Lines; Electric Fields and
+  conductors; Motion of a Charged Particle in an Electric Field;
+  Electric Dipoles. \smallskip \\
+
+  \dotfill Week \#4  \\
+  {\color{darkgreen}{\Rectangle}} Electric Potential Energy and
+  Potential Difference; Relation Between Electric Potential and
+  Electric Field; Electric Potential due to Point Charges;
+  Potential Due to Any Charge Distribution; Equipotential Lines
+  and Surfaces; Applications of Electrostatics.\smallskip \\
+
+  \dotfill Week \#5  \\
+  {\color{darkgreen}{\Rectangle}} Definition of
+  Capacitance;Calculation of Capacitance; Capacitors in Series
+  and Parallel; Storage of Electrical Energy; Dielectrics; An
+  Atomic Description of  Dielectrics.\smallskip \\
+
+  \dotfill Week \#6  \\
+  {\color{darkgreen}{\Rectangle}} Electric Current; Ohm’s Law:
+  Resistance and Resistors; Resistivity; Model for Electrical
+  Conduction; Resistance and  Temperature; Superconductors;
+  Electrical Power.
+  \smallskip \\
+
+  \dotfill Week \#7 \\
+  {\color{darkgreen}{\Rectangle}} Midterms.
+  \smallskip \\
+
+  \dotfill Week \#8  \\
+  {\color{darkgreen}{\Rectangle}} EMF and Terminal Voltage;
+  Resistors in Series and Parallel; Kirchhoff’s Rules; EMFs in
+  Series and Parallel; Charging a Battery; RC Circuits – Resistor
+  and Capacitor in Series.
+  \smallskip \\
+
+  \dotfill Week \#9  \\
+  {\color{darkgreen}{\Rectangle}} Magnets and Magnetic Fields;
+  Electric Current Produce Magnetic Fields; Force on an Electric
+  Current in a Magnetic Field: Definition of B; Force on an
+  Electric Charge Moving in a Magnetic Field; Torque on a Current Loop.
+  \smallskip \\
+
+  \dotfill Week \#10  \\
+  {\color{darkgreen}{\Rectangle}} Magnetic Dipole Moment;
+  Applications: Motors, Loudspeakers, Galvanometers; The Hall Effect.
+  \smallskip \\
+
+  \dotfill Week \#11  \\
+  {\color{darkgreen}{\Rectangle}} The Biot-Savart Law; The
+  Magnetic Force Between Two Parallel
+  Conductors; Ampere's Law; The Magnetic Field of a Solenoid;
+  Gauss's Law in Magnetism; Magnetism in Matter.
+  \smallskip \\
+
+  \dotfill Week \#12 \\
+  {\color{darkgreen}{\Rectangle}} Induced EMF; Faraday’s Law of
+  Induction; Lenz’s Law; EMF Induced in a Moving Conductor;
+  Electric Generators; Back EMF and Counter Torque; Eddy
+  Currents; Transformers and Transmission of Power; A Changing
+  Magnetic Field Produces an electric Field.
+  \smallskip \\
+
+  \dotfill Week \#13 \\
+  {\color{darkgreen}{\Rectangle}} Mutual Inductance;
+  Self-Inductance; Inductors; Energy Stored in a Magnetic Field;
+  LR Circuits; LC Circuits and Electromagnetic Oscillations; LC
+  Oscillations with Resistance (RLC Circuit).
+  \smallskip \\
+
+  \dotfill Week \#14 \\
+  {\color{darkgreen}{\Rectangle}} AC Circuits and Reactance; RLC
+  Series AC Circuit; Phasor Diagrams; Resonance in AC Circuits.
+
+  \dotfill Week \#15  \\
+  {\color{darkgreen}{\Rectangle}} Changing Electric Fields
+  Produce Magnetic Fields; Displacement Current; Gauss’s Law for
+  Magnetism; Maxwell’s Equations; Production of Electromagnetic
+  Waves; Electromagnetic Waves, and Their Speed, Derived From
+  Maxwell’s Equations.
+  \smallskip \\
+  \dotfill Week \#16 \\
+  {\color{darkgreen}{\Rectangle}} Finals.
+  \smallskip \\
+
+\end{flushleft}
+\end{center}
+
+\vspace*{.15in}
+\noindent\textbf{Grading Policy:}
+Three components determine your grade: Exams, Homework and
+Attendance. The relative weights are as follows: \medskip\\
+\begin{center}
+\begin{minipage}{3.5in}
+  \begin{flushleft}
+    Exams \dotfill ~ $70$\% \\
+    {\color{darkred}{\Rectangle}} Two exams. Midterm is $30$\%,
+    Final is $40$\%.
+
+    \medskip \\
+    Homeworks \dotfill ~ $10$\% \\
+    {\color{darkred}{\Rectangle}} 2 homeworks, each accounting
+    for $5$\%.   \medskip \\
+
+    {\color{darkred}{\Rectangle}} Project \dotfill ~ $25$\% \\
+
+    {\color{darkred}{\Rectangle}} Attendance \dotfill ~ $5$\% \\
+
+  \end{flushleft}
+\end{minipage}
+\end{center}
+\underline{Letter range will be as follows.}
+
+\scalebox{0.8}{
+\begin{tabular}{llllllllllllll}
+  \hline
+  Letter & F    & D-    & D     & D+    & C-    & C     & C+    &
+  B-    & B     & B+    & A-    & A     & A+     \\ \hline
+  Range  & 0-20 & 21-26 & 27-33 & 34-40 & 41-46 & 47-53 & 54-60 &
+  61-65 & 66-70 & 71-75 & 76-85 & 86-95 & 96-100 \\ \hline
+\end{tabular}}
+
+\vskip.15in
+\noindent\textbf{Course Objectives:}
+The goal of this course is to provide a calculus-based physics course
+to help students pursuing advanced studies in sciences and
+engineering develop conceptual understanding of physical principles,
+the ability to reason, and gain skills for problem solving.
+
+\vskip.15in
+\noindent\textbf{Academic Integrity:}
+You are expected to demonstrate academic honesty in all aspects of
+this course. Academic dishonesty includes, but is not limited to:
+violating clearly stated rules for taking an exam or completing an
+assignment; plagiarism (including material from sources without a
+citation and quotation marks around any borrowed words); claiming
+another’s work or a modification of another’s work as one’s own;
+buying or attempting to buy papers or projects for a course;
+fabricating information or citations.
+%%%%%% THE END
+\end{document}
