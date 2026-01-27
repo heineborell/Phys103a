@@ -311,4 +311,6 @@ TSWLatexianTemp*
 # glossaries
 *.glstex
 
+# my additions
+/notes
 # End of https://www.toptal.com/developers/gitignore/api/latex
