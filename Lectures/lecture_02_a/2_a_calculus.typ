@@ -40,6 +40,10 @@
   = Objectives
   - Short review on differentiation and integration.
 ]
+#slide[= General Idea
+- The Infinity Principle (Steven Strogatz-Infinite Powers)
+#box(stroke: 2pt, inset: 8pt)[ To understand any continous shape, object, motion, process or phenomenon-no matter how wild and complicated it may appear-reimagine it as an infinite series of simpler parts, analyze those, and then add the results back together to make sense of the original whole.]
+- BUT BE CAREFUL SUMMING THEM UP!]
 #new-section[Derivatives]
 
 #slide[
@@ -51,6 +55,19 @@
   $ frac(d x, d t)=lim_(Delta t -> 0) frac(Delta x, Delta t) $
 
 ]
+
+#slide[- We can also generalise this idea to two dimensions. Consider the following particle path
+#figure(image("fig_4.png", width: 80%)) ]
+#slide[ #columns[
+  - Then its easy to show $Delta bold(r)=bold(r)(t+ Delta t)-bold(r)(t)$. This is of course equivalent to two scalar equations.
+  $ Delta x=x(t+Delta t)-x(t) \
+  Delta y=y(t+Delta t)-y(t) $
+
+  - Finally taking the limit we get
+  $ bold(v)=lim_(Delta t -> 0) frac(Delta bold(v), Delta t) = frac(d bold(r), d t) $
+
+  #figure(image("fig_5.png", width: 80%))
+]]
 
 #slide[
   #columns[ - In general, plot of function $f(u)$ vs. $u$, the derivative $d f\/d u$ is the slope of the straight line tangent to the curve representing $f(u)$ see figure.
@@ -85,7 +102,7 @@ $ frac(d, d u)(c f)= c frac(d f, d u) $
 - #strong[Chain rule for derivatives]
 $ frac(d, d u)(f(g))= frac(d f, d g)frac(d g, d u) $]]
 
-#new-section[= Integrals]
+#new-section[Integrals]
 #slide[We found out how to calculate the velocity of a particle given its position as a function of time. Now we can ask the inverse question:
 #box(stroke: 2pt, inset: 8pt)[What about if instantenous velocity is know, how can we find the position?]
 - We already know if the acceleration is constant we have
@@ -124,13 +141,33 @@ $ integral_(a)^(b)u^n d u = [u^(n+1) / (n+1)]_a^b = b^(n+1) / (n+1) -a^(n+1) / (
   $ integral_a^b c f(u) d u=c integral_a^b f(u)d u $]
   #align(center)[ - #strong[Integral of sum of two functions]
   $ integral_a^b (f(u)+g(u)) d u= integral_a^b f(u)d u + integral_a^b g(u) d u $]
-  #align(center)[ - #strong[Change the limits of integration]
-  $ integral_a^b f(u) d u= integral_a^c f(u)d u + integral_c^b f(u) d u $]
-]
-#slide[
   #align(center)[
-    $ integral_a^b f(u) d u= -integral_b^a f(u)d u $ ]
+    - #strong[Change the limits of integration]
+    $integral_a^b f(u) d u= integral_a^c f(u)d u + integral_c^b f(u) d u$ and $integral_a^b f(u) d u= -integral_b^a f(u)d u$ ]
+]
+
+#slide[
   #align(center)[ - #strong[Change the variable of integration]
   $ integral_a^b f(u) d u= integral_(v(a))^(v(b)) f(u) (d u) / (d v) d v $]
 
 ]
+
+#new-section[Approximation Methods]
+#slide[- Occasinally solving physics problems you might realise the mathematics gets quite complicated or computationally hard or you just want to have a simpler answer. In those cases by using some approximate expressions for you can get the answer easily. Although the result won't be exact it will be true enough.
+
+- As an example consider the period of a simple pendulum $T_0=2 pi sqrt(g \/ L)$ where $L$ is length $g$ is gravitational acceleration.
+
+- Lets say the length $L$ changed by small amount $l$ so that new length is $L+l$. Then question is how much the period $T$ changed i.e. $Delta T$?.
+$ Delta T = T-T_0=2pi (sqrt(g / (L+l))-sqrt(g / L)) $
+In this form of the equation we have little idea how $Delta T$ depends on $l$. If $l<<L$ then we the result will be very sensitive to numerical errors too.]
+
+#slide[- So first define $x=l / L$ and write the above equation as
+$ Delta T=T_0(sqrt(1 / (1+x))-1) $
+- Then use the following identity
+$ sqrt(1 / (1+x))=1-1 / 2 x+3 / 8 x^2-1 / 16 x^3+... $
+- Taking only the first term in the identity
+$ Delta T approx -T_0 x = -1 / 2 T_0 l / L $
+- The identity we used above is called power series expansion.]
+
+#slide[= Power series
+then ]

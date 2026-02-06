@@ -74,23 +74,27 @@
 - In 1960 a committee established set of standarts for the above quantities. (There are also extras Kelvin, Ampere, Candela, Mole)]
 #slide[
 
-  - very good video on how chaotic the units in oilfield engineering is the following
+  - very good video on how chaotic the units in oil-field engineering is the following
   #figure(image("oilfield_units.png", width: 95%))
   #show link: underline
   https://www.youtube.com/watch?v=sdWEGzWFcCc
 ]
 
-#slide[
-
-  #align(center)[ #box(width: 80%)[
-    #oxdraw("
+#slide[ #columns[#box(width: 110%)[
+  #oxdraw("
 graph TD
   A[SI (Système <br> International) units] --> B[Meter]
   A --> C[Kilogram]
-  A --> D[Second]
-")
-  ]]
+  A --> D[Second]")
 ]
+
+#box(width: 115%)[ #oxdraw("
+graph TD
+  A[US Customary Units] --> B[Inch / Foot / Mile]
+  A --> C[Ounce / Pound / Ton]
+  A --> D[Second]
+  A --> E[Fluid Ounce / Gallon]")
+]]]
 
 #slide[
 
@@ -121,7 +125,7 @@ graph TD
 #slide[= Time
 
 - Before 1967, the standard of time was the mean solar day. The fundamental unit of a second
-  was (1/60)x(1/60)x(1/24) of a mean solar day.
+  was (1/60)x(1/60)x(1/24) of a mean solar day. The _solar day_ is the time interval between two successive passages of the Sun over a given meridian on the Earth.
 
 - In 1967 second is defined as 9162631770 times the period of vibration of radiation from the cesium-133 atom.]
 
@@ -153,6 +157,16 @@ graph TD
 
 #slide[= Mass
 #figure(image("output-5.jpg", width: 70%)) ]
+
+#slide[
+
+  = Derived Units
+  - Meter, second and kilogram are the fundamental units, or _base units_ of the metric system.
+  - We can even measure the charge of an electron by these units but it is not practical. That is why the complete set of SI units also include:
+  #box(stroke: 2pt, inset: 8pt)[Meter for length, second for time, kilogram for mass, kelvin for temperature, ampere for current, candela for luminosity.]
+
+  - Any other physical unit can be measured by introducing a _derived unit_ constructed by some combination of the fundamental units.
+]
 
 #slide[= Dimensional Analysis
 
