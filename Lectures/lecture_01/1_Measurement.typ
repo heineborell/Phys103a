@@ -178,6 +178,18 @@ $ "speed" -> [v] = L / T , quad
 
 - A dimensional analysis example
 #figure(image("output-6.jpg", width: 100%)) ]
+#slide[= Bomb example
+- Mathematician G.I Taylor gave an dimensional analysis to estimate the spreading rate for the atomic bomb, which was classified US military information back in 1940s.
+
+From his work in fluids, Taylor assumed the relevant variables would be:
+- r, the radius of the shock front.
+- $rho$, density of surrounding air.
+- E, energy released by the device.
+- t, the time at which the front reaches r.
+
+- Nice review papers on G.I Taylor analysis. The shorter easy one
+  https://www.wtamu.edu/~dcraig/PHYS4340/070119_bombscale.pdf , more technical one
+  https://arxiv.org/pdf/2403.19657v1]
 
 #new-section[Conversion]
 
@@ -186,6 +198,20 @@ $ "speed" -> [v] = L / T , quad
 - We often need to change the units in which a physical quantity is expressed. We do so by a method called _chain-link_ conversion. In this method, we multiply the original measurement by a conversion factor (a ratio of units that is equal to unity).
 
 #figure(image("output-1.jpg", width: 100%))]
+
+#slide[= Some examples of converion and interesting units
+- What does some units actually measure? To understand that we can convert them back to fundamental units.
+
+- First example is fuel efficiency in US it is given in miles/gallon and in EU litres/100 km. Consider the EU example, first the litres is $1000 "cm"^3$
+  $ "litres/100km" =frac(1000 "cm"^3, 100 "km")= frac(1000 "cm"^3, 100 "km")frac(1m^3, 10^(6)"cm"^3)
+      =frac(10^(-3)m^(3), 10^5 m)= 0.01 "mm"^2 $
+- The final result is actually weird as its area unit! So the explanation is as follows:
+
+  #box(stroke: 2pt, inset: 8pt)[ If you took all the gas you burned on a trip and stretched it out into a thin tube along your route, 0.1 square millimeters would be the cross-sectional area of that tube.]]
+#slide[ #figure(image("droppings_car.png", width: 100%))]
+
+#slide[ #figure(image("birds.png", width: 100%))
+- You can read more at https://what-if.xkcd.com/11/]
 
 #slide[= Some famous conversion errors
 #set text(size: 18pt)

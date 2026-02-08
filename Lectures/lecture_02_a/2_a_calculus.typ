@@ -170,4 +170,17 @@ $ Delta T approx -T_0 x = -1 / 2 T_0 l / L $
 - The identity we used above is called power series expansion.]
 
 #slide[= Power series
-then ]
+- The general form of expressing a function $f(x)$ as a power series in $x$ is
+$ f(x)=a_0+a_1 x+ a_2 x^2+ a_3 x^3+ ...=sum_(k=0)^infinity a_k x^k $
+- Evaluate series at $x=0$, $a_0=f(0)$.
+- Now differentiate series and assuming it "behaves well" the only non-zero term at $x=0$ is
+$ a_0=f'(x)|_(x=0) $
+- Generalisation is easier and called Taylor Series
+  $ f(x)=sum_(k=0)^infinity a_k x^k quad "where" a_k=1 / k! f^k (x)|_(x=0) $]
+#slide[= Expansions of Common Functions
+$ sin(x)= x- 1 / 3! x^3 + 1 / 5! x^5 + ... quad "converges for all values of x" $
+$ cos(x)= 1- 1 / 2! x^2 + 1 / 4! x^4+ ... quad "converges for all values of x" $
+$ e^(x)=1+x+ 1 / 2! x^2 + 1 / 3! x^3 + ... quad "converges for all values of x" $
+- Binomial series, converges for $-1< x< 1$
+$ (1+x)^n=1+x+ 1 / 2! x^2 + 1 / 3! x^3 + ... quad $
+if $n$ is integer, the series terminates, the last term being $x^n$.]
