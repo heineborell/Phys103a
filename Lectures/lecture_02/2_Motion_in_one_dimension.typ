@@ -66,13 +66,24 @@ graph TD
 ]
 
 #new-section[Time and Motion]
+#slide[= Space and Time
+- To determine the position of a particle or an event we need some convenient *origin*, then measure the distance of the particle with respect to this origin.
+
+- For this purpose we imagine a grid of lines around the origin and specify the position of the particle (coordinates) with respect to this grid.
+
+#figure(image("rectangular.png", width: 75%))]
+
+#slide[ - Instead of rectangular coordinates we may have _spherical_ or _cylindrical_ coordinates too.
+
+#figure(image("spherical_cyclin.png", width: 95%))]
 
 #slide[
 
   = Absolute motion, time
-  #box(stroke: 2pt, inset: 8pt)[ - _Newton, Principia_ (1687): "Absolute space, in its own nature, without relation to anything external, remains always similar and immovable."
+  - So we construct the coordinate system for particles but what about time?
+  #box(stroke: 2pt, inset: 8pt)[ - _Newton, Principia_ (1687): "Absolute, true, and mathematical time, of itself, and from its own nature, flows equably without relation to anything external, and by another name is called duration."
 
-  - _Newton, Principia_ (1687): "Absolute, true, and mathematical time, of itself, and from its own nature, flows equably without relation to anything external, and by another name is called duration."]
+  - _Newton, Principia_ (1687): "Absolute space, in its own nature, without relation to anything external, remains always similar and immovable."]
 
   - How do we define motion in this _"absolute"_ space?
 
@@ -83,25 +94,21 @@ graph TD
 ]
 
 #slide[
+  #figure(
+    grid(
+      columns: (1fr, 1fr, 1fr),
+      // Two equal columns
+      gutter: 10pt,
+      // Space between the images
+      image("reference_frames_1.png", width: 100%), image("reference_frames_2.png", width: 100%), image("reference_frames_3.png", width: 100%),
+    ),
+    caption: [Different set of reference frames can differ in terms of positon, orientation or speed. ],
+  )
+]
 
-  = Position
-
-  - A _particle position_ x is the location of particle
-    with respect to a chosen reference point that we can
-    consider to be the origin of a coordinate
-    system.
-
-  - We can represent position in three different ways. Tabular, pictorial or graphical.
-
-    #columns[
-      #figure(
-        image("output-0.jpg", width: 65%),
-      )
-
-      #figure(
-        image("output-2.jpg", width: 95%),
-      )
-    ]
+#slide[
+  - The absolute time in a coordinate grid.
+  #figure(image("synchronized_clocks.png", width: 100%))
 ]
 
 #slide[
@@ -112,15 +119,14 @@ graph TD
 
   $ Delta x = x_f -x_i $
 
-  - Note that this is different than total distance! Where total distance is always positive the displacement can be negative too!
+  - Note that this is different than total distance _d_. The total distance is always positive the displacement can be negative too!
 
-  - Displacement is a _vector_ quantity, i.e. it has direction and magnitude.
+  - Displacement is a _vector_ quantity, i.e. it has direction and magnitude. By contrast total distance is a _scalar_ quantity. It doesn't have any directions, only numerical value.
 
-  - By contrast total distance is a _scalar_ quantity. It doesn't have any directions, only numerical value.
-
-  - For an example consider a basketball player. If a player runs from his own team’s basket down the court to the other team’s basket and then returns to his own basket, the displacement of the player during this time interval is zero because he ended up at the same point as he started:
+  - For an example consider a basketball player. If a player runs from his own team’s basket down the court to the other team’s basket and then returns to his own basket, the displacement of the player during this time interval is zero:
 
   $ Delta x= 0, quad x_f = x_i $
+  but the total distance he traveled is $d= 2 times "basketball court".$
 ]
 
 #slide[= Average velocity, speed
@@ -132,7 +138,8 @@ $ v_(x, "avg") = frac(Delta x, Delta t)
 
 - Average speed is defined as following. (Note that just like total distance speed is also a scalar quantity.)
 
-$ v = frac(d, Delta t) $ ]
+$ v = frac(d, Delta t) $
+- A runner runs 100m on a straight track in 11s and then walks back in 80s. What are the average velocity and average speed for the each part of this motion and for the complete motion.]
 
 #slide[= Average velocity, speed
 
@@ -208,7 +215,7 @@ $ v_"fx"=v_"fi"+a_x t $
 
 - Position after time t.
 
-$ x_f= x_i +v_{"xi"}t+frac(1, 2)a_x t^2 $
+$ x_f= x_i +v_"xi"t+frac(1, 2)a_x t^2 $
 
 - "Timeless" velocity and position formula
 
@@ -216,14 +223,34 @@ $ v_"fx"^2 = v_"xi"^2+2 a_x (x_f-x_i) $
 
 - All of these can also be derived using calculus (easier).]
 
+#slide[ = Free Fall Acceleration
+
+- If you tossed an object either up or down and could somehow eliminate the effects of air on its flight, you would find that the object accelerates downward at a certain constant rate. That rate is called the freefall acceleration, and its magnitude is represented by g. The acceleration is independent of the object’s characteristics, such as _mass_, _density_, or _shape_; it is the same for all objects.
+
+#box(stroke: 2pt, inset: 8pt)[ The acceleration produced by gravity near the surface of the Earth is usually denoted by _g_.
+$ g tilde.equiv 9.81 "m" \/ s^2 tilde.equiv 32.2 "ft" \/s^2 $]]
+
 #slide[
+  #columns[ #figure(image("output-10.jpg", width: 55%))
 
-  = Free Fall Acceleration
+  #figure(image("galileo.png", width: 45%))]
+]
 
-  - If you tossed an object either up or down and could somehow eliminate the effects of air on its flight, you would find that the object accelerates downward at a certain constant rate. That rate is called the freefall acceleration, and its magnitude is represented by g. The acceleration is independent of the object’s characteristics, such as _mass_, _density_, or _shape_; it is the same for all objects.
+#slide[
+  #figure(image("g_table.png", width: 100%))
 
-  #figure(
-    image("output-10.jpg", width: 55%),
-  )
+]
+
+#slide[
+  - To describe free-fall motion, take the x axis in the upward direction then $a=-g$ which makes the equations for
+    $ v_"fx"=v_"fi"-g t $
+
+  - Position after time t.
+
+    $ x_f= x_i +v_"xi"t-frac(1, 2)g t^2 $
+
+  - "Timeless" velocity and position formula
+
+    $ v_"fx"^2 = v_"xi"^2-2 g (x_f-x_i) $
 
 ]

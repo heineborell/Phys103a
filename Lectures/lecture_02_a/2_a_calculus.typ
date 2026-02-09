@@ -55,7 +55,15 @@
   $ frac(d x, d t)=lim_(Delta t -> 0) frac(Delta x, Delta t) $
 
 ]
+#slide[ - To see this graphically consider a particle moving with constant velocity, then its graph will be the following.
+#columns[ #figure(image("worldline.png", width: 60%))
 
+- Slope at any time interval is equal to the slope on another time interval.
+
+- So instantenous velocity is always equal to the average velocity.]]
+
+#slide[- In the case of a particle with varying velocity (accelerated motion) we have a graph which is not straight line anymore. The instantenous velocity at a given time is now the slope of the tangent to the x-t plot.
+#figure(image("velocity.png", width: 85%)) ]
 #slide[- We can also generalise this idea to two dimensions. Consider the following particle path
 #figure(image("fig_4.png", width: 80%)) ]
 #slide[ #columns[
@@ -184,3 +192,5 @@ $ e^(x)=1+x+ 1 / 2! x^2 + 1 / 3! x^3 + ... quad "converges for all values of x" 
 - Binomial series, converges for $-1< x< 1$
 $ (1+x)^n=1+x+ 1 / 2! x^2 + 1 / 3! x^3 + ... quad $
 if $n$ is integer, the series terminates, the last term being $x^n$.]
+
+#slide[- One important point on the expansion parameter. So as you see the first terms in some of the expansions are numbers so they are dimensionless. Then the expansion parameter has to be dimensionless too. That is why we defined $x=l / L$ in previous example.]

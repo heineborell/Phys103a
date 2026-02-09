@@ -186,10 +186,15 @@ From his work in fluids, Taylor assumed the relevant variables would be:
 - $rho$, density of surrounding air.
 - E, energy released by the device.
 - t, the time at which the front reaches r.
+He was able to show using these the radius is then
+$ r(t)=C rho^(-1 / 5) E^(1 / 5) t^(2 / 5) $
 
-- Nice review papers on G.I Taylor analysis. The shorter easy one
-  https://www.wtamu.edu/~dcraig/PHYS4340/070119_bombscale.pdf , more technical one
-  https://arxiv.org/pdf/2403.19657v1]
+Nice review papers on G.I Taylor analysis.
+- The shorter easy one https://www.wtamu.edu/~dcraig/PHYS4340/070119_bombscale.pdf
+
+- YouTube video https://www.youtube.com/watch?v=SUnAvL-ThMs
+
+- More technical one https://arxiv.org/pdf/2403.19657v1]
 
 #new-section[Conversion]
 
