@@ -1,0 +1,113 @@
+#+STARTUP: latexpreview
+#+STARTUP: inlineimages
+#+TITLE: CHP-1 Measurement
+#+AUTHOR: Phys103a
+#+DATE: Jan 16, 2025
+#+OPTIONS: H:2 toc:t num:nil
+#+LATEX_HEADER: \usepackage{booktabs}
+#+LATEX_HEADER: \usepackage{amsmath}
+
+* Objectives
+
+- What does physics do?
+  
+- Understand units.
+  
+- What are the fundamental units.
+  
+- Conversions.
+  
+- Significant Figures.
+
+
+* Physics and Experiment
+- Like all other sciences, physics is based on experimental observations
+and quantitative measurements.
+
+- The main objectives of physics are to identify a limited number of fundamental laws that govern natural phenomena and use them to develop theories that can predict the future experiments.
+  
+- When there is a discrepancy between the prediction of a theory and experimental results, new or modified theories must be formulated.
+  
+- For example:
+  - Newtonian mechanics $\rightarrow$ Einstein theory of relativity
+  - Blackbody radiation $\rightarrow$ Quantum mechanics
+
+* Standards of Length, Mass, Time
+- To describe natural phenomena we need measurements.
+#+begin_quote
+*Base quantities*: Fortunately, they are not all independent; for example, speed is the ratio of a length to a time.
+#+end_quot
+- In mechanics we have three fundamental quantities: /length, mass/ and /time/.
+- In 1960 a committee established set of standards (Kelvin, Ampere, Candela, Mole).
+
+* Oilfield Units (The "Cursed" System)
+
+- A very good video on how chaotic the units in oil-field engineering are:
+- [[https://www.youtube.com/watch?v=sdWEGzWFcCc][Oilfield Units: A Measurement System so Cursed it made me Change Career]]
+#+ATTR_ORG: :width 100%
+[[file:oilfield_units.png]]
+
+* Length
+- *meter (1960)*: Distance between two lines on a specific platinum-iridium bar in France.
+#+ATTR_ORG: :width 80%
+[[file:ss_3.jpg]]
+- *meter (1983)*: Distance traveled by light in vacuum during a time of $1/299,792,458$ second.
+
+* Time
+- In 1967 second is defined as $9,162,631,770$ times the period of vibration of radiation from the cesium-133 atom.
+#+ATTR_ORG: :width 20%
+[[file:output-3.jpg]]
+- A cesium fountain atomic clock. The clock will neither gain nor lose a second in 20 million years.
+
+* Mass
+- The SI standard of mass is a cylinder of platinum and iridium kept at the International Bureau of Weights and Measures.
+#+ATTR_ORG: :width 30%
+[[file:output-0.jpg]] [[file:output-4.jpg]]
+
+* Kibble Balance
+- In a Kibble balance, a standard mass can be measured when the downward pull of gravity is balanced by magnetic force.
+#+ATTR_ORG: :width 70%
+[[file:output-5.jpg]]
+
+* Derived Units & Dimensional Analysis
+* Dimensional Analysis
+- We use brackets $[ ]$ to denote dimensions.
+- $\text{speed} \rightarrow [v] = L/T$
+- $\text{area} \rightarrow [A] = L^2$
+
+- A dimensional analysis example:
+#+ATTR_ORG: :width 100%
+[[file:output-6.jpg]]
+
+** The G.I. Taylor Bomb Example
+- Taylor assumed: $r$ (radius), $\rho$ (density of air), $E$ (energy), $t$ (time).
+- The radius is then:
+  \[ r(t) = C \rho^{-1/5} E^{1/5} t^{2/5} \]
+
+* Conversion
+* Conversion
+- We use *chain-link* conversion.
+#+ATTR_ORG: :width 90%
+[[file:output-1.jpg]]
+
+- *Interesting Case*: Fuel efficiency (Litres/100km).
+  - Calculated as: 
+    \[ \frac{1000 \text{ cm}^3}{100 \text{ km}} = 0.01 \text{ mm}^2 \]
+#+ATTR_ORG: :width 60%
+[[file:droppings_car.png]]
+
+#+ATTR_ORG: :width 500
+[[file:birds.png]]
+
+* Significant Figures
+** Rules for Significant Figures
+- Non-zero digits are significant ($365 \rightarrow 3$).
+- Zeros between digits are significant ($6.003 \rightarrow 4$).
+- Leading zeros are *not* significant ($0.0075 \rightarrow 2$).
+- Trailing decimal zeros are significant ($3.50 \rightarrow 3$).
+
+** Calculation Rules
+- *Multiplication/Division*: Smallest number of significant figures.
+  \[ A = \pi r^2 = \pi (6.0 \text{ cm})^2 = 1.1 \times 10^2 \text{ cm}^2 \]
+- *Addition/Subtraction*: Smallest number of decimal places.
+  - Example: $23.2 + 5.174 = 28.4$

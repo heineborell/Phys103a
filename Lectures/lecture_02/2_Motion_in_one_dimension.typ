@@ -22,7 +22,7 @@
   #metropolis.divider
 
   // #set text(size: .8em, weight: "light")
-  Phys105
+  General Physics 1
 
   Jan 16, 2025
 
@@ -119,7 +119,7 @@ graph TD
 
   $ Delta x = x_f -x_i $
 
-  - Note that this is different than total distance _d_. The total distance is always positive the displacement can be negative too!
+  - Note that this is different than total distance _d_. The total distance is always positive, however the displacement can be negative too!
 
   - Displacement is a _vector_ quantity, i.e. it has direction and magnitude. By contrast total distance is a _scalar_ quantity. It doesn't have any directions, only numerical value.
 

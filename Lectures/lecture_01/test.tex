@@ -1,0 +1,231 @@
+\documentclass[10pt]{beamer}
+
+% Theme selection
+\usetheme{metropolis}
+\usepackage{appendixnumberbeamer}
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioner}
+
+% Font settings (requires XeLaTeX or LuaLaTeX to match your fonts)
+% If using pdfLaTeX, these lines should be commented out.
+\usepackage{fontspec}
+\setmonofont{Iosevka}
+% Note: "Adwaita Mono" and "Noto Sans Math" must be installed on your OS
+
+\title{CHP-1 Measurement}
+\subtitle{Phys105}
+\date{January 16, 2025}
+\author{}
+\institute{}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Table of Content}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+\begin{frame}{Objectives}
+  \begin{itemize}
+    \item What does physics do?
+    \item Understand units.
+    \item What are the fundamental units.
+    \item Conversions.
+    \item Significant Figures.
+  \end{itemize}
+\end{frame}
+
+\section{Physics and Experiment}
+
+\begin{frame}{Physics and Experiment}
+  \begin{itemize}
+    \item Like all other sciences, physics is based on experimental
+      observations and quantitative measurements.
+    \item The main objectives of physics are to identify a limited
+      number of fundamental laws that govern natural phenomena and
+      use them to develop theories that can predict the future
+      experiments. (Check out for Thomas Kuhn, Karl Popper).
+    \item When there is a discrepancy between the prediction of a
+      theory and experimental results, new or modified theories must
+      be formulated to remove discrepancy.
+    \item For example:
+      \begin{itemize}
+        \item Newtonian mechanics $\rightarrow$ Einstein theory of relativity
+        \item Blackbody radiation $\rightarrow$ Quantum mechanics
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\section{Standards of Length, Mass, Time}
+
+\begin{frame}{Standards of Length, Mass, Time}
+  \begin{itemize}
+    \item To describe natural phenomena we need measurements.
+  \end{itemize}
+
+  \begin{center}
+    \fbox{
+      \begin{minipage}{0.8\textwidth}
+        \textbf{Base quantities}: There are so many physical
+        quantities that it is a problem to organize them.
+        Fortunately, they are not all independent; for example, speed
+        is the ratio of a length to a time.
+      \end{minipage}
+    }
+  \end{center}
+
+  \begin{itemize}
+    \item In mechanics we have three fundamental quantities
+      \textit{length, mass} and \textit{time}.
+    \item In order to reproduce experiments we need \textit{standards}.
+    \item In 1960 a committee established a set of standards
+      (including Kelvin, Ampere, Candela, Mole).
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Unit Chaos}
+  \begin{itemize}
+    \item A very good video on how chaotic units in oil-field engineering are:
+  \end{itemize}
+  \begin{figure}
+    %\includegraphics[width=0.8\textwidth]{oilfield_units.png}
+    \url{https://www.youtube.com/watch?v=sdWEGzWFcCc}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Unit Systems}
+  \begin{columns}
+    \column{0.5\textwidth}
+    \centering
+    \small
+    \begin{tikzpicture}[node distance=1.2cm, every node/.style={draw,
+      fill=blue!10, font=\scriptsize}]
+      \node (A) {SI Units};
+      \node (B) [below of=A, xshift=-0.8cm] {Meter};
+      \node (C) [below of=A] {Kilogram};
+      \node (D) [below of=A, xshift=0.8cm] {Second};
+      \draw [->] (A) -- (B); \draw [->] (A) -- (C); \draw [->] (A) -- (D);
+    \end{tikzpicture}
+
+    \column{0.5\textwidth}
+    \centering
+    \small
+    \begin{tikzpicture}[node distance=1.2cm, every node/.style={draw,
+      fill=red!10, font=\scriptsize}]
+      \node (A) {US Customary};
+      \node (B) [below of=A, xshift=-1cm, yshift=0.3cm] {Inch/Foot};
+      \node (C) [below of=A, xshift=-0.3cm, yshift=-0.2cm] {Ounce/Pound};
+      \node (D) [below of=A, xshift=0.3cm, yshift=-0.2cm] {Second};
+      \node (E) [below of=A, xshift=1cm, yshift=0.3cm] {Gallon};
+      \draw [->] (A) -- (B); \draw [->] (A) -- (C); \draw [->] (A) --
+      (D); \draw [->] (A) -- (E);
+    \end{tikzpicture}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Length}
+  \begin{itemize}
+    \item Distance between two points in space.
+    \item \textit{Yard}: Tip of nose to end of arm of the King of England!
+    \item Until 1799: 1/10,000,000 of distance from equator to North
+      Pole via Paris.
+    \item 1960: Distance between lines on a platinum-iridium bar.
+  \end{itemize}
+  \begin{figure}
+    %\includegraphics[width=0.5\textwidth]{ss_3.jpg}
+    \caption{Platinum-iridium bar.}
+  \end{figure}
+  \begin{itemize}
+    \item 1983: Distance traveled by light in vacuum in 1/299,792,458 second.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Time}
+  \begin{itemize}
+    \item Pre-1967: Mean solar day. Second = $(1/60) \times (1/60)
+      \times (1/24)$ of a solar day.
+    \item 1967: 9,162,631,770 periods of radiation from cesium-133 atom.
+  \end{itemize}
+  \begin{columns}
+    \column{0.4\textwidth}
+    %\includegraphics[width=\textwidth]{output-3.jpg}
+    \column{0.6\textwidth}
+    A cesium fountain atomic clock. Will not lose a second in 20 million years.
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Mass}
+  \begin{itemize}
+    \item Standard: Cylinder of platinum-iridium in France (1 kg).
+    \item Kibble Balance: Measuring mass via magnetic fields and
+      electrical currents linked to quantum constants.
+  \end{itemize}
+  %\includegraphics[width=0.6\textwidth]{output-5.jpg}
+\end{frame}
+
+\begin{frame}{Dimensional Analysis}
+  \begin{itemize}
+    \item Symbols: $L$ (Length), $M$ (Mass), $T$ (Time).
+    \item Brackets $[ \ ]$ denote dimensions.
+    \item Speed $\rightarrow [v] = L/T$
+    \item Area $\rightarrow [A] = L^2$
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{The Bomb Example (G.I. Taylor)}
+  Estimate of atomic bomb spreading rate (1940s):
+  \[ r(t) = C \rho^{-1/5} E^{1/5} t^{2/5} \]
+  Where $r$ is radius, $\rho$ is air density, $E$ is energy, and $t$ is time.
+\end{frame}
+
+\section{Conversion}
+
+\begin{frame}{Conversion}
+  \begin{itemize}
+    \item \textbf{Chain-link conversion}: Multiplying by a ratio equal to unity.
+    \item Example: Fuel efficiency.
+      \[ \text{litres/100km} = \frac{10^{-3} m^3}{10^5 m} = 0.01 \text{ mm}^2 \]
+    \item \textit{Interpretation}: The cross-sectional area of a tube
+      of gas stretched along your route.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Famous Errors}
+  \begin{itemize}
+    \item \textbf{Mars Climate Orbiter (1999)}: \$125 million lost
+      because Lockheed Martin used English units (pounds) while NASA
+      used Metric (Newtons).
+    \item \textbf{Tokyo Disneyland (2004)}: Space Mountain derailment
+      due to an axle sized in inches instead of millimeters.
+  \end{itemize}
+\end{frame}
+
+\section{Significant Figures}
+
+\begin{frame}{Significant Figures: Rules}
+  \begin{itemize}
+    \item Non-zero digits are significant.
+    \item Zeros between digits are significant (6.003 $\rightarrow$ 4).
+    \item Leading zeros are NOT significant (0.0075 $\rightarrow$ 2).
+    \item Trailing decimal zeros are significant (3.50 $\rightarrow$ 3).
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Calculations}
+  \begin{itemize}
+    \item \textbf{Mult/Div}: Result has same sig figs as the factor
+      with the \textit{fewest} sig figs.
+    \item \textbf{Add/Sub}: Result has same decimal places as the
+      term with the \textit{fewest} decimal places.
+  \end{itemize}
+\end{frame}
+
+\end{document}

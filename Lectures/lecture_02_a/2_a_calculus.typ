@@ -22,7 +22,7 @@
   #metropolis.divider
 
   // #set text(size: .8em, weight: "light")
-  Phys105
+  General Physics 1
 
   Jan 16, 2025
 

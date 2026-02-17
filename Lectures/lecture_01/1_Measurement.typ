@@ -22,7 +22,7 @@
   #metropolis.divider
 
   // #set text(size: .8em, weight: "light")
-  Phys105
+  General Physics 1
 
   Jan 16, 2025
 
@@ -187,9 +187,9 @@ From his work in fluids, Taylor assumed the relevant variables would be:
 - E, energy released by the device.
 - t, the time at which the front reaches r.
 He was able to show using these the radius is then
-$ r(t)=C rho^(-1 / 5) E^(1 / 5) t^(2 / 5) $
+$ r(t)=C rho^(-1 / 5) E^(1 / 5) t^(2 / 5) $]
 
-Nice review papers on G.I Taylor analysis.
+#slide[ Nice review papers on G.I Taylor analysis.
 - The shorter easy one https://www.wtamu.edu/~dcraig/PHYS4340/070119_bombscale.pdf
 
 - YouTube video https://www.youtube.com/watch?v=SUnAvL-ThMs
@@ -204,7 +204,7 @@ Nice review papers on G.I Taylor analysis.
 
 #figure(image("output-1.jpg", width: 100%))]
 
-#slide[= Some examples of converion and interesting units
+#slide[= Some examples of conversion and interesting units
 - What does some units actually measure? To understand that we can convert them back to fundamental units.
 
 - First example is fuel efficiency in US it is given in miles/gallon and in EU litres/100 km. Consider the EU example, first the litres is $1000 "cm"^3$
@@ -276,3 +276,7 @@ $ A = pi r^2 = pi (6.0 "cm")^2 = 1.1 × 10^2 "cm"^2 $
   4. 31.9 / 7.318
 
 ]
+
+// Local Variables:
+// typst-preview--master-file: "/home/deniz/Teaching/PHYS101/Lectures/lecture_01/1_Measurement.typ"
+// End:
