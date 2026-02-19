@@ -15,14 +15,12 @@
 #slide[
   #set page(header: none, footer: none, margin: 3em)
 
- 
   #text(size: 1.3em)[
-*Chapter 5 -- Force and Motion 1*
+    *Chapter 5 -- Force and Motion 1*
   ]
 
-
   #metropolis.divider
-  
+
   // #set text(size: .8em, weight: "light")
   Phys105
 
@@ -31,106 +29,114 @@
 ]
 
 #slide[
+
   = Table of Content
 
-  #metropolis.outline 
+  #metropolis.outline
 ]
 
 #slide[
+
   = Objectives
 
-- Operationally define mass, force.
-- Identify Newton's laws.
-- Apply Newton's laws.
+  - Operationally define mass, force.
+  - Identify Newton's laws.
+  - Apply Newton's laws.
 ]
 
-#new-section[Newton's Laws]
+#new-section[Newton's Laws ]
 #slide[ = Newton's Laws
+#columns[
+  #figure(image("newton.png", width: 32%))
 
-- Newton's laws are simple and not mathematically complex. But they are in now way evident. They combine definitions, observations from nature and some unexamined assumptions about space and time. We say they are not evident as the Aristotelian physics stood for 2000 years!
+  - Newton's laws are simple and not mathematically complex. But they are in now way evident. They combine definitions, observations from nature and some unexamined assumptions about space and time. We say they are not evident as the Aristotelian physics stood for 2000 years!
 
-- In Principia (1687) Newton left some points unclear but it was so successful no modifications are added for about 200 years. They were later discussed by Ernst Mach.
+]]
 
-- There are alternative approaches to the Newtonian formulation of mechanics. Among these are Lagrangian and Hamiltonian formulation of mechanics which take energy rather than force as the fundamental concept.
+#slide[ #columns[
+  #figure(image("mach.png", width: 47%))
 
-- Newtonian mechanics breaks down for objects that are moving comparable to speed of light and objects that are in atomic dimensions. So we need to consider special relativity and quantum mechanics for these limits.
+  - In Principia (1687) Newton left some points unclear but it was so successful no modifications are added for about 200 years. They were later discussed by Ernst Mach.
+
+]]
+
+#slide[
+
+  - There are alternative approaches to the Newtonian formulation of mechanics. Among these are Lagrangian and Hamiltonian formulation of mechanics which take energy rather than force as the fundamental concept.
+
+  - Newtonian mechanics breaks down for objects that are moving comparable to speed of light and objects that are in atomic dimensions. So we need to consider special relativity and quantum mechanics for these limits.
+
 ]
-
 #slide[= Force
 
 - Everyone has a basic understanding of the concept of force from everyday experience. When you push your empty dinner plate away, you exert a force on it. Similarly, you exert a force on a ball when you throw or kick it. In these examples, the word force refers to an interaction with an object by means of muscular activity and some change in the object’s velocity. These are called _contact forces_.
 
-
 - The _field forces_ are does not require contact and they can act through empty space. The first example we will study is the gravitational force.
 
-
-#box(stroke:2pt,inset:8pt)[
-_The fundamental forces are:_ \
- Gravitational force (between masses) - (gravitons) \
- Electromagnetic force (between charged objects) - (photons)\
- Strong force (between subatomic particles) - (gluons)\
- Weak force (radioactive decay process) - (W, Z bosons)]
-]
+#box(stroke: 2pt, inset: 8pt)[ _The fundamental forces are:_ \
+Gravitational force (between masses) - (gravitons) \
+Electromagnetic force (between charged objects) - (photons)\
+Strong force (between subatomic particles) - (gluons)\
+Weak force (radioactive decay process) - (W, Z bosons)] ]
 
 #slide[ = Newton's First Law and Inertial Systems
 - Newton's first law or 'law of inertia' defines a set of reference frames called _inertial frames_.
 
 - If an object does not interact with other objects, it is possible to identify a reference frame in which the object has zero acceleration. Such a frame is called _inertial frame of reference_.
 
-- Any reference frame that moves with constant velocity with respect to an inertial frame is itself an inertial frame. ]
+- Any reference frame that moves with constant velocity with respect to an inertial frame is itself an inertial frame.]
 
-#slide[ 
-#show: focus
-_Newton's First Law_
-#box(stroke:3pt,inset:15pt)[
-- _First law:_ In the absence of external forces and when viewed from an inertial frame, an object at rest remains at rest and object in motion continues in motion with constant velocity.] ]
+#slide[
+  #show: focus
+  _Newton's First Law_
+  #box(stroke: 3pt, inset: 15pt)[ - _First law:_ In the absence of external forces and when viewed from an inertial frame, an object at rest remains at rest and object in motion continues in motion with constant velocity.] ]
 
+#slide[
+  - To understand what is an inertial frame and its use in Newton's law consider the following:
+  In the reference frame of the ground, a ball at rest on the floor of a train station remains at rest, but in the reference frame of an accelerating train leaving the station, a ball initially at rest on the floor of a train car has a spontaneous acceleration toward the end of the train, in contradiction to Newton's law. Thus the reference frame of the ground is an inertial frame, but that of the accelarating train is not.
+
+  - Given a reference frame that is inertial, any other reference frame in uniform translational motion relative to the first is will also be inertial!
+
+  - This implies that any two inertial frame can differ only by relative velocity and the measured acceleration is absolute.
+
+]
 #slide[ = Mass
 
 - Mass is a property of and object that specifies how much resistance an object exhibit against changes in velocity. The greater the mass the less it accelerates under an applied force.
 
-Take the unit mass as $m_1$ then define the mass of the second and third bodies as $ m_2 = m_1 a_1/a_2 ,quad  m_3 = m_1 a_1/a_3 $.
+Take the unit mass as $m_1$ then define the mass of the second and third bodies as $ m_2 = m_1 a_1 / a_2 ,quad m_3 = m_1 a_1 / a_3 $.
 
 - Mass is an inherent property of an object and independent of its surroundings.
 
-- Note that mass is not the same thing as _weight_ of an object. Weight depends where you measure it. ]
+- Note that mass is not the same thing as _weight_ of an object. Weight depends where you measure it.]
 
 #slide[
   #show :focus
-_Newton's second law and Force_
-#box(stroke:3pt,inset:15pt)[
- _Second law:_ When viewed from an inertial frame, the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass:]
-$
-Sigma arrow(F) = m arrow(a)
-$
+  _Newton's second law and Force_
+  #box(stroke: 3pt, inset: 15pt)[ _Second law:_ When viewed from an inertial frame, the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass:]
+  $ Sigma arrow(F) = m arrow(a) $
 ]
 
 #slide[= Newton's second law and Force
 
-  As this is a vector equation
-$
-Sigma F_x = m a_x, quad Sigma F_y = m a_y, quad Sigma F_z = m a_z
-$
+As this is a vector equation
+$ Sigma F_x = m a_x, quad Sigma F_y = m a_y, quad Sigma F_z = m a_z $
 If some of all forces on a body is zero we call it body is in equilibrium.
-$
-Sigma arrow(F) = 0
-$
+$ Sigma arrow(F) = 0 $
 - The S.I. unit of force is Newton.
-$
-1 N = 1 frac("kg" m,s^2)
-$ ]
-
+$ 1 N = 1 frac("kg" m, s^2) $ ]
 
 #slide[
-#show: focus
-_Newton's third law_
+  #show: focus
+  _Newton's third law_
 
-#box(stroke:2pt,inset:15pt)[
-If two objects interact, the force $ arrow(F_12)$ exerted by the object 1 on object 2 is equal in \ magnitude and opposite in direction to the force $ arrow(F_21)$ exerted by object 2 on object 1.] ]
+  #box(stroke: 2pt, inset: 15pt)[ If two objects interact, the force $arrow(F_12)$ exerted by the object 1 on object 2 is equal in \
+  magnitude and opposite in direction to the force $arrow(F_21)$ exerted by object 2 on object 1.] ]
 
 #slide[
   #figure(
-  image("ss_2.png", width: 40%),) 
+    image("ss_2.png", width: 40%),
+  )
 ]
 
 #slide[ = Applying Newton's Laws
@@ -139,13 +145,11 @@ If two objects interact, the force $ arrow(F_12)$ exerted by the object 1 on obj
 
 1- _Isolate the masses_ = Mentally divide the system that each contain a single mass. Each mass will be treated as point particle.
 
-
 2- _Draw a force diagram for each mass_:
 
 - Represent each body by a point and label them.
 - For each mass, draw a force vector starting on the mass, one for each force acting _on it_.
 - Draw only forces acting on the body!
-
 
 - Show coordinate system on the force diagram.]
 #new-section[Applying Newton's Laws]
@@ -155,10 +159,8 @@ If two objects interact, the force $ arrow(F_12)$ exerted by the object 1 on obj
 
 - By equations of motion we mean Newton's equations.
 
-$
-F_(1 x)+F_(2 x)+  =M a_x
-$
-- Write the _constraint_ equations. ]
+$ F_(1 x)+F_(2 x)+ =M a_x $
+- Write the _constraint_ equations.]
 
 #slide[= Some particular forces
 
@@ -170,18 +172,20 @@ $
 
 - Tension in the cords, ropes.]
 
-
-#slide[= Examples 
+#slide[= Examples
 
 #figure(
-  image("ss_3.png", width: 40%),) ]
+  image("ss_3.png", width: 40%),
+) ]
 
 #slide[= Examples
 
 #figure(
-  image("ss_4.png", width: 40%),) ]
+  image("ss_4.png", width: 40%),
+) ]
 
 #slide[= Examples
 
 #figure(
-  image("ss_5.png", width: 40%),) ]
+  image("ss_5.png", width: 40%),
+) ]
