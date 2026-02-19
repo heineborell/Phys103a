@@ -40,10 +40,10 @@ This calculus based course provides students with the basic concepts of physics 
 
 #text(weight: "bold")[Course times:]
 #set enum(indent: 0.2in)
-All lectures are at E7-241.
-+ General Physics II - Section 1 Tuesday 15:00-16:30 / Thursday 15:00-16:30.
-+ General Physics II - Section 2 Tuesday 16:30-18:00 / Thursday 16:30-18:00.
-+ General Physics II - Section 3 Monday 10:30-12:00 / Wednesday 10:30-12:00.
++ Section 1 Tue 15:00-16:30 / Thu 15:00-16:30. (E7-241)
++ Section 2 Tue 11:00-12:30 / Thu 11:00-12:30. (E7-241)
++ Section 3 Tue 17:00-18:30 / Thu 17:00-18:30. (E7-241)
++ Section 4 Wed 15:00-16:30 / Fri 15:00-16:30. (E7-236)
 
 #v(0.15in)
 
@@ -53,11 +53,12 @@ All lectures are at E7-241.
 #v(0.15in)
 
 #text(weight: "bold")[Teaching Assistants:] \
-#block(inset: (left: 0.2in))[
-  Section 1: 이태균, email: dlxorbs4150\@dgist.ac.kr \
-  Section 2: 이승우, email: leeseungwoo0313\@dgist.ac.kr \
-  Section 3: 조민서, email: log0114\@dgist.ac.kr
-]
+To be announced.
+// #block(inset: (left: 0.2in))[
+//   Section 1: 이태균, email: dlxorbs4150\@dgist.ac.kr \
+//   Section 2: 이승우, email: leeseungwoo0313\@dgist.ac.kr \
+//   Section 3: 조민서, email: log0114\@dgist.ac.kr
+// ]
 
 #v(0.15in)
 
@@ -65,7 +66,7 @@ All lectures are at E7-241.
 These three books will be used as main source depending on topic. Since the syllabus of this introductory course is highly standartised, all the books have similar content. Try to check all of them and find the one you like.
 
 + Principles of Physics, Halliday & Resnick, Eleventh Edition, QC21.3 H35 2020.
-+ Physics for Scientists and Engineers, Hans C. Ohanian, John T. Markert, 2007.
++ Physics for Scientists and Engineers, Hans C. Ohanian, John T. Markert, 2007. (This one has a newer and older version, I prefer the older one.)
 + Physics for Scientists and Engineers with Modern Physics, Raymond Serway & John Jewett, 2013.
 
 #pagebreak()
@@ -119,13 +120,13 @@ These three books will be used as main source depending on topic. Since the syll
 #align(center)[
   #set align(left)
   #box(width: 3.5in)[
-    Exams #dotfill 70% \
-    #text(fill: rgb(180, 0, 0))[□] Two exams. Midterm is 30%, Final is 40%. \
+    Exams #dotfill 75% \
+    #text(fill: rgb(180, 0, 0))[□] Two exams. Midterm is 30%, Final is 45%. \
     #v(0.5em)
     Homeworks #dotfill 5% \
     #text(fill: rgb(180, 0, 0))[□] 2 homeworks (usually before exams for practice) 5%. \
     #v(0.5em)
-    #text(fill: rgb(180, 0, 0))[□] Project #dotfill 20% \
+    #text(fill: rgb(180, 0, 0))[□] Project #dotfill 15% \
     #v(0.5em)
     #text(fill: rgb(180, 0, 0))[□] Attendance #dotfill 5%
   ]
@@ -240,3 +241,10 @@ Projects will be evaluated based on:
 == Submission
 
 All materials must be submitted through the LMS by the announced deadline.
+
+== How to choose a paper from AJP
+- Click search here
+#figure(image("ss1.png", width: 95%))
+- Choose topics from left. Try to choose mechanics or sth related with our course.
+#figure(image("ss2.png", width: 95%))
+#figure(image("ss3.png", width: 95%))

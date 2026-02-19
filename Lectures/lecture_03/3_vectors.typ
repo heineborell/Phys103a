@@ -109,7 +109,7 @@ the same magnitude i.e., $|arrow(A)|=|arrow(B)|$ and they are parallel $arrow(A)
 #figure(image("ss_5.png", width: 60%)) ]
 
 #slide[
-  - We can also think about the 3 dimensional vectors in a similar fashion. Each of the components can be sum to give the final vector
+  - We can also think about the 3 dimensional vectors in a similar fashion. Each of the components can be summed to give the final vector
 
   - For any arbitrary vector $arrow(A)$, the x, y, z components can be defined as
     $ A_x= A cos(theta_x), quad A_y=A cos(theta_y), quad A_z= A cos(theta_z) $
