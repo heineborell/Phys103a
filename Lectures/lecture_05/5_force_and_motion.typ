@@ -100,6 +100,14 @@ Weak force (radioactive decay process) - (W, Z bosons)] ]
   - This implies that any two inertial frame can differ only by relative velocity and the measured acceleration is absolute.
 
 ]
+#slide[#columns[
+  - Most of the experiments we do on Earth and one might ask if the Earth is an inertial frame or not. Actually it is not because of the rotation around itself. But the effects are fairly small. The centripetal acceleration because of the rotation is.
+  $ a= & 4 pi frac(R_E cos(theta), T^2) \
+    =  & 0.034 m \/ s^2. $
+
+  #figure(image("earth.png", width: 62%))
+
+]]
 #slide[ = Mass
 
 - Mass is a property of and object that specifies how much resistance an object exhibit against changes in velocity. The greater the mass the less it accelerates under an applied force.
@@ -123,9 +131,19 @@ As this is a vector equation
 $ Sigma F_x = m a_x, quad Sigma F_y = m a_y, quad Sigma F_z = m a_z $
 If some of all forces on a body is zero we call it body is in equilibrium.
 $ Sigma arrow(F) = 0 $
-- The S.I. unit of force is Newton.
+- The S.I. unit of force is _Newton_.
 $ 1 N = 1 frac("kg" m, s^2) $ ]
 
+#slide[= Superposition of Forces
+#columns[
+  - How can we calculate the simulatneous effect of two or more forces?
+
+  The answer is supplied by _principle of superposition_ !
+  #colbreak()
+  #figure(image("boat.png", width: 100%))
+]
+If several forces $arrow(F_1), arrow(F_2), arrow(F_3), ...$ act simultaneously on a body, then the acceleration is the same as that produced by a single force given by
+$ arrow(F)_("net") =arrow(F_1)+arrow(F_2)+arrow(F_3)+... $ ]
 #slide[
   #show: focus
   _Newton's third law_
@@ -134,9 +152,12 @@ $ 1 N = 1 frac("kg" m, s^2) $ ]
   magnitude and opposite in direction to the force $arrow(F_21)$ exerted by object 2 on object 1.] ]
 
 #slide[
-  #figure(
-    image("ss_2.png", width: 40%),
-  )
+  #columns[ #figure(image("action.png", width: 40%))
+
+    #figure(image("apple.png", width: 80%))
+    - This pair of forms is called _action-reaction pair_.
+
+  ]
 ]
 
 #slide[ = Applying Newton's Laws
