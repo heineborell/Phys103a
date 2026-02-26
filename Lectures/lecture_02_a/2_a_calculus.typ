@@ -24,7 +24,7 @@
   // #set text(size: .8em, weight: "light")
   General Physics 1
 
-  Jan 16, 2025
+  #datetime.today().display()
 
 ]
 
@@ -46,16 +46,9 @@
 - BUT BE CAREFUL SUMMING THEM UP!]
 #new-section[Derivatives]
 
-#slide[
+#slide[ = Derivatives
 
-  = Derivatives
-  - We saw that if the position of the particle is some function of time, say $x = x(t)$, then then the instantenous velocity of the particle is the derivative of x with respect to t,
-  $ v= frac(d x, d t) $
-  this derivative is defined by first looking at a small increment $Delta x$ that results from a small increment $Delta t$, and then evaluating the ratio $Delta x \/ Delta t$, in the limit when both $Delta x$ and $Delta t$ tend toward zero.
-  $ frac(d x, d t)=lim_(Delta t -> 0) frac(Delta x, Delta t) $
-
-]
-#slide[ - To see this graphically consider a particle moving with constant velocity, then its graph will be the following.
+- In order to investigate derivatives let us consider a particle moving with constant velocity, then its graph will be the following.
 #columns[ #figure(image("worldline.png", width: 60%))
 
 - Slope at any time interval is equal to the slope on another time interval.
@@ -64,6 +57,22 @@
 
 #slide[- In the case of a particle with varying velocity (accelerated motion) we have a graph which is not straight line anymore. The instantenous velocity at a given time is now the slope of the tangent to the x-t plot.
 #figure(image("velocity.png", width: 85%)) ]
+
+#slide[
+  #columns[ - In general, plot of function $f(u)$ vs. $u$, the derivative $d f\/d u$ is the slope of the straight line tangent to the curve representing $f(u)$ see figure.
+
+  #figure(image("fig_1.pdf", width: 80%))]
+
+]
+#slide[
+
+  = Derivatives
+  - If the position of the particle is some function of time, say $x = x(t)$, then then the instantenous velocity of the particle is the derivative of x with respect to t,
+  $ v= frac(d x, d t) $
+  this derivative is defined by first looking at a small increment $Delta x$ that results from a small increment $Delta t$, and then evaluating the ratio $Delta x \/ Delta t$, in the limit when both $Delta x$ and $Delta t$ tend toward zero.
+  $ frac(d x, d t)=lim_(Delta t -> 0) frac(Delta x, Delta t) $
+
+]
 #slide[- We can also generalise this idea to two dimensions. Consider the following particle path
 #figure(image("fig_4.png", width: 80%)) ]
 #slide[ #columns[
@@ -76,13 +85,6 @@
 
   #figure(image("fig_5.png", width: 80%))
 ]]
-
-#slide[
-  #columns[ - In general, plot of function $f(u)$ vs. $u$, the derivative $d f\/d u$ is the slope of the straight line tangent to the curve representing $f(u)$ see figure.
-
-  #figure(image("fig_1.pdf", width: 80%))]
-
-]
 
 #slide[
   - From the definition given above we can find the derivative of $f(u)=u^2$. If we increase the function as in the definition

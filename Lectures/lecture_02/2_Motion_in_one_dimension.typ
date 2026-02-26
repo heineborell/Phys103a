@@ -24,8 +24,7 @@
   // #set text(size: .8em, weight: "light")
   General Physics 1
 
-  Jan 16, 2025
-
+  #datetime.today().display()
 ]
 
 #slide[
@@ -40,7 +39,9 @@
   = Objectives
 
   - Study relationship between a particle’s displacement and its initial and final positions.
+
   - Work on relationship between a particle’s average velocity, its displacement, and the time interval for that displacement.
+
   - Given a graph of a particle’s position versus time, ­ determine the average velocity between any two particular times.
 ]
 
@@ -58,10 +59,14 @@ graph TD
 ]] ]
 
 #slide[
+  - _Kinematics_ is the study of geometry of motion. _Dynamics_ studies force as the cause of changes in motion.
+
   - We categorize motions as translational, rotational and vibrational.
 
   - Our first focus will be _ideal particle_ motion.
+
   - It is basically a particle with no "inner structure" like electron.
+
   - As an example we can think of Earth motion around the Sun as a point particle motion. However for the Earth's motion around its axis we should consider it as a rigid body.
 ]
 
@@ -211,7 +216,7 @@ $ a_(x, "avg") = frac(v_(x f) - v_(x i), t_f - t_i)
 
 - Velocity after time t.
 
-$ v_"fx"=v_"fi"+a_x t $
+$ v_"xf"=v_"xi"+a_x t $
 
 - Position after time t.
 
@@ -219,7 +224,7 @@ $ x_f= x_i +v_"xi"t+frac(1, 2)a_x t^2 $
 
 - "Timeless" velocity and position formula
 
-$ v_"fx"^2 = v_"xi"^2+2 a_x (x_f-x_i) $
+$ v_"xf"^2 = v_"xi"^2+2 a_x (x_f-x_i) $
 
 - All of these can also be derived using calculus (easier).]
 
@@ -243,7 +248,7 @@ $ g tilde.equiv 9.81 "m" \/ s^2 tilde.equiv 32.2 "ft" \/s^2 $]]
 
 #slide[
   - To describe free-fall motion, take the x axis in the upward direction then $a=-g$ which makes the equations for
-    $ v_"fx"=v_"fi"-g t $
+    $ v_"xf"=v_"xi"-g t $
 
   - Position after time t.
 
@@ -251,6 +256,6 @@ $ g tilde.equiv 9.81 "m" \/ s^2 tilde.equiv 32.2 "ft" \/s^2 $]]
 
   - "Timeless" velocity and position formula
 
-    $ v_"fx"^2 = v_"xi"^2-2 g (x_f-x_i) $
+    $ v_"xf"^2 = v_"xi"^2-2 g (x_f-x_i) $
 
 ]

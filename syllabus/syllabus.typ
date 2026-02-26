@@ -183,7 +183,7 @@ Attendance is mandatory and will be formally graded. Assignments and exams must 
 
 = Course Project: Mechanics Paper Study
 
-The course project will be completed in groups of *3–4 students* throughout the semester.
+The course project will be completed in groups of *4 students* throughout the semester.
 Each group must select *one published paper from the _American Journal of Physics_* or a similar journal whose main topic is *mechanics*. The chosen paper should be appropriate for the course level, meaning that all concepts, derivations, and calculations can be understood and reproduced by the group.
 
 ---

@@ -24,8 +24,7 @@
   // #set text(size: .8em, weight: "light")
   General Physics 1
 
-  Jan 16, 2025
-
+  #datetime.today().display()
 ]
 
 #slide[
@@ -78,6 +77,10 @@
   #figure(image("oilfield_units.png", width: 95%))
   #show link: underline
   https://www.youtube.com/watch?v=sdWEGzWFcCc
+]
+
+#slide[
+  #figure(image("oilfield_2.png", width: 90%))
 ]
 
 #slide[ #columns[#box(width: 110%)[
@@ -213,10 +216,35 @@ $ r(t)=C rho^(-1 / 5) E^(1 / 5) t^(2 / 5) $]
 - The final result is actually weird as its area unit! So the explanation is as follows:
 
   #box(stroke: 2pt, inset: 8pt)[ If you took all the gas you burned on a trip and stretched it out into a thin tube along your route, 0.1 square millimeters would be the cross-sectional area of that tube.]]
+
 #slide[ #figure(image("droppings_car.png", width: 100%))]
+#slide[
+  - Another nice example is Hubble Constant. Friedmann suggested that universe can be expanding. Later Lemaitre and Hubble estimated the rate of expansion.
+  #figure(image("hubble.png", width: 70%))
+
+]
+
+#slide[ #figure(image("hubble_2.png", width: 80%))
+]
+
+#slide[ - $H_0=70 "km"\/s\/"Mpc"=2.3 x 10^(-18) "Hz".$
+
+- $1\/H_0= 14 x 10^(9)$ (Age of the universe?)
+
+- How does this give you the age of the universe? Because the inverse Hubble constant is basically the distance of the galaxy divided by its velocity. (assuming the speed of the galaxy moving away from you is always the same)
+- HOWEVER THIS EXPLANATION IS TOTALY WRONG! BECAUSE HUBBLE CONSTANT IS NOT A CONSTANT!]
 
 #slide[ #figure(image("birds.png", width: 100%))
 - You can read more at https://what-if.xkcd.com/11/]
+
+#slide[ - What about $"kWh"$ ? It is basically total energy spend in an hour.
+- $1W=1 "Joule" \/ s$ then
+
+$ "kWh" = 1000 "Joules" / s x 3600 s = 3.6 x 10^6 "Joules" $
+- This is kind of interesting because, lets say you want to write down distance covered by a car in 20 minutes going 60 km/h. Which is given by
+$ 1 / 3 h x 60 "km" / h = 20 "km" $
+- But instead we basically write
+  $ 20 "min" x 60 "km" / h=1200 "km" / h min $]
 
 #slide[= Some famous conversion errors
 #set text(size: 18pt)
@@ -252,7 +280,7 @@ $ A = pi r^2 = pi (6.0 "cm")^2 = 1.1 × 10^2 "cm"^2 $
   result should equal the smallest number of decimal places of any term in the
   sum or difference.
 
-23.2+5.174 =28.4 ]
+  23.2+5.174 =28.4]
 
 #slide[
   - State the number of sig figs in each value:
