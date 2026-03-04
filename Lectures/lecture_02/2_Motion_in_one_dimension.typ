@@ -179,16 +179,6 @@ $ v_x = lim_(Delta t → 0) frac(Delta x, Delta t)
   - Find the instantaneous velocity at t=2.5.
 ]
 
-#slide[= Particle moving under constant velocity
-
-> The distance covered by a particle moving in one direction (lets say x) is the following
-
-$ x_f = x_i + v_x t $
-
-- Note that a particle moving with _constant speed_ can change direction!
-
-#figure(image("output-6.jpg", width: 45%))]
-
 #slide[= Acceleration
 
 - When the velocity of the particle changes with time it is called particle is accelerating. Average acceleration is given by
@@ -209,6 +199,16 @@ $ a_(x, "avg") = frac(v_(x f) - v_(x i), t_f - t_i)
       = frac(d v_x, d t)
       = frac(d^2 x, d t^2) $
 ]]
+
+#slide[= Particle moving under constant velocity
+
+> The distance covered by a particle moving in one direction (lets say x) is the following
+
+$ x_f = x_i + v_x t $
+
+- Note that a particle moving with _constant speed_ can change direction!
+
+#figure(image("output-6.jpg", width: 45%))]
 
 #slide[ = Particle under constant acceleration
 
