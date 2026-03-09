@@ -24,7 +24,7 @@
   // #set text(size: .8em, weight: "light")
   Phys105
 
-  Jan 16, 2025
+  #datetime.today().display()
 
 ]
 

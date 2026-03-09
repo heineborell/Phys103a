@@ -116,6 +116,14 @@ the same magnitude i.e., $|arrow(A)|=|arrow(B)|$ and they are parallel $arrow(A)
     where
     $ A= sqrt(A_x^2+A_y^2+A_z^2) $
 
+  - $theta_x, theta_y, theta_z$ are called direction of cosines.
+
+]
+
+#slide[
+
+  #figure(image("cosines.png", width: 70%))
+
 ]
 
 #slide[

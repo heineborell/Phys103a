@@ -165,18 +165,18 @@ $ integral_(a)^(b)u^n d u = [u^(n+1) / (n+1)]_a^b = b^(n+1) / (n+1) -a^(n+1) / (
 #new-section[Approximation Methods]
 #slide[- Occasinally solving physics problems you might realise the mathematics gets quite complicated or computationally hard or you just want to have a simpler answer. In those cases by using some approximate expressions for you can get the answer easily. Although the result won't be exact it will be true enough.
 
-- As an example consider the period of a simple pendulum $T_0=2 pi sqrt(g \/ L)$ where $L$ is length $g$ is gravitational acceleration.
+- As an example consider the frequency of a simple pendulum $f_0=frac(1, 2 pi) sqrt(frac(g, L))$ where $L$ is length $g$ is gravitational acceleration.
 
-- Lets say the length $L$ changed by small amount $l$ so that new length is $L+l$. Then question is how much the period $T$ changed i.e. $Delta T$?.
-$ Delta T = T-T_0=2pi (sqrt(g / (L+l))-sqrt(g / L)) $
-In this form of the equation we have little idea how $Delta T$ depends on $l$. If $l<<L$ then we the result will be very sensitive to numerical errors too.]
+- Lets say the length $L$ changed by small amount $l$ so that new length is $L+l$. Then question is how much the frequency $f$ changed i.e. $Delta f$?.
+$ Delta f = f-f_0=frac(1, 2pi) (sqrt(g / (L+l))-sqrt(g / L)) $
+In this form of the equation we have little idea how $Delta f$ depends on $l$. If $l<<L$ then we the result will be very sensitive to numerical errors too.]
 
 #slide[- So first define $x=l / L$ and write the above equation as
-$ Delta T=T_0(sqrt(1 / (1+x))-1) $
+$ Delta f=f_0(sqrt(1 / (1+x))-1) $
 - Then use the following identity
 $ sqrt(1 / (1+x))=1-1 / 2 x+3 / 8 x^2-1 / 16 x^3+... $
 - Taking only the first term in the identity
-$ Delta T approx -T_0 x = -1 / 2 T_0 l / L $
+$ Delta f approx -f_0 x = -1 / 2 f_0 l / L $
 - The identity we used above is called power series expansion.]
 
 #slide[= Power series
@@ -192,7 +192,7 @@ $ sin(x)= x- 1 / 3! x^3 + 1 / 5! x^5 + ... quad "converges for all values of x" 
 $ cos(x)= 1- 1 / 2! x^2 + 1 / 4! x^4+ ... quad "converges for all values of x" $
 $ e^(x)=1+x+ 1 / 2! x^2 + 1 / 3! x^3 + ... quad "converges for all values of x" $
 - Binomial series, converges for $-1< x< 1$
-$ (1+x)^n=1+x+ 1 / 2! x^2 + 1 / 3! x^3 + ... quad $
+$ (1+x)^n=1+n x+ 1 / 2! n (n-1) x^2 + 1 / 3! n(n-1)(n-2)x^3 + ... quad $
 if $n$ is integer, the series terminates, the last term being $x^n$.]
 
 #slide[- One important point on the expansion parameter. So as you see the first terms in some of the expansions are numbers so they are dimensionless. Then the expansion parameter has to be dimensionless too. That is why we defined $x=l / L$ in previous example.]
