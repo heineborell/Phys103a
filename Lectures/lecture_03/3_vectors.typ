@@ -97,7 +97,8 @@ the same magnitude i.e., $|arrow(A)|=|arrow(B)|$ and they are parallel $arrow(A)
 #slide[= Components of a vector
 - It is better to work the components of a vector when high accuracy is required. We are going to make use of projections of vectors along coordinate axes.
 
-#figure(image("ss_4.png", width: 90%)) ]
+#figure(image("ss_4.png", width: 70%)) ]
+- From the figure it is easy to see $arrow(A)=arrow(A_x)+arrow(A_y)$ and $|arrow(A)|=sqrt(A_x^2+A_y^2).$
 
 #slide[= Unit vectors
 
@@ -156,6 +157,11 @@ the same magnitude i.e., $|arrow(A)|=|arrow(B)|$ and they are parallel $arrow(A)
   #box(stroke: 2pt, inset: 8pt)[ In two dimensions, a _vector_ is an object with two components $A_x$ and $A_y$ that transform under a coordinate rotation in exactly the same way as the components of the position vector.]
   - From the relation we have above it is easy to see the length of the vector is preserved under rotations! Meaning:
     $ sqrt(x^2+y^2)=sqrt(x'^2+y'^2) $
+
+]
+
+#slide[
+  #figure(image("tensor.jpg", width: 90%))
 
 ]
 // Local Variables:
