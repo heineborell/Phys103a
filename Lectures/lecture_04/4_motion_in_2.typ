@@ -47,7 +47,7 @@
 #new-section[Position, velocity and acceleration]
 #slide[= Position and Displacement
 
-- We extend the idea of position from chp-2 to two dimension x-y. We indicate particle position by its position vector as follows.
+- We extend the idea of position from chp-2 to two dimensions x-y. We indicate particle position by its position vector as follows.
 
 $ arrow(r) = x hat(i)+y hat(j)+ z hat(k) $
 
@@ -68,7 +68,7 @@ $ Delta arrow(r) = arrow(r)_2 - arrow(r)_1 $ ]
 #slide[
 
   = Average velocity
-  - As we have defined in 1 dimension average velocity is
+  - As we have defined in one dimension average velocity is
   $ arrow(v)_"avg" =frac(Delta arrow(r), Delta t) $
   - Note that average velocity is independent of the motion only, depends on end points.
 ]
@@ -92,6 +92,11 @@ $ Delta arrow(r) = arrow(r)_2 - arrow(r)_1 $ ]
 $ arrow(a)_"avg" = frac(arrow(v)_f - arrow(v)_i, t_f -t_i)= frac(Delta v, Delta t) $
 #figure(image("ss_6.png", width: 49%)) ]
 
+#slide[
+
+  #figure(image("accelerate_1.png", width: 60%))
+  #figure(image("accerlerate_2.png", width: 30%))
+]
 #slide[
   - Similarly instantaneous acceleration will be
   $ arrow(a) = lim_(Delta t -> 0) frac(Delta v, Delta t)=frac(d arrow(v), d t) $
@@ -123,7 +128,7 @@ arrow(r)_f = arrow(r)_i + arrow(v)_i t +1 / 2 arrow(a) t^2, \
 v_(i x)= v cos theta, quad v_(i y)= v sin theta $ ]
 
 #slide[
-  #figure(image("ss_9.png", width: 90%))
+  #figure(image("ss_9.png", width: 82%))
 ]
 
 #slide[
@@ -145,6 +150,8 @@ v_(i x)= v cos theta, quad v_(i y)= v sin theta $ ]
   $ h = (v_i^2 sin(theta)^2) / (2 g),
       quad
       R = (v_i^2 sin(2 theta)) / g $
+  #figure(image("strobos.png", width: 35%))
+
 ]]
 
 #slide[ = Uniform circular motion
@@ -172,11 +179,11 @@ $ a_c= frac(v^2, r) $]
 #slide[= Uniform circular motion
 
 - _Period_ is defined as the time interval required to complete one revolution.
-- Inverse of the period is _rotation rate_.
+- Inverse of the period is _rotation rate_ (frequency).
 
 - From these we can define the angular speed and acceleration.
 
-$ T=frac(2 pi r, v), quad omega= frac(2\pi, T), quad a_c= r omega^2 $
+$ T=frac(2 pi r, v), quad omega= frac(2 pi, T), quad a_c= r omega^2 $
 #figure(image("ss_13.png", width: 96%)) ]
 #new-section[Relative Motion]
 #slide[= Relative motion

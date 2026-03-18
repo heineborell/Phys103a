@@ -24,7 +24,7 @@
   // #set text(size: .8em, weight: "light")
   Phys105
 
-  Jan 16, 2025
+  #datetime.today().display()
 
 ]
 
@@ -49,7 +49,7 @@
 #columns[
   #figure(image("newton.png", width: 32%))
 
-  - Newton's laws are simple and not mathematically complex. But they are in now way evident. They combine definitions, observations from nature and some unexamined assumptions about space and time. We say they are not evident as the Aristotelian physics stood for 2000 years!
+  - Newton's laws are simple and not mathematically complex. But they are in no way evident. They combine definitions, observations from nature and some unexamined assumptions about space and time. We say they are not evident as the Aristotelian physics stood for 2000 years!
 
 ]]
 
@@ -79,21 +79,24 @@ Electromagnetic force (between charged objects) - (photons)\
 Strong force (between subatomic particles) - (gluons)\
 Weak force (radioactive decay process) - (W, Z bosons)] ]
 
-#slide[ = Newton's First Law and Inertial Systems
-- Newton's first law or 'law of inertia' defines a set of reference frames called _inertial frames_.
-
-- If an object does not interact with other objects, it is possible to identify a reference frame in which the object has zero acceleration. Such a frame is called _inertial frame of reference_.
-
-- Any reference frame that moves with constant velocity with respect to an inertial frame is itself an inertial frame.]
-
 #slide[
   #show: focus
   _Newton's First Law_
   #box(stroke: 3pt, inset: 15pt)[ - _First law:_ In the absence of external forces and when viewed from an inertial frame, an object at rest remains at rest and object in motion continues in motion with constant velocity.] ]
 
+#slide[ = Newton's First Law and Inertial Systems
+- A body on which no external forces are acting is called _free body_.
+
+- In order to work on particles and forces you first need a way to distiguish particles with no force acting on them.
+
+- Newton's first law or 'law of inertia' is not valid for all reference frames, but only certain special frames reference frames called _inertial frames_.
+
+- If an object does not interact with other objects, it is possible to identify a reference frame in which the object has zero acceleration. Such a frame is called _inertial frame of reference_.
+
+- How do we find these inertial frames? Take a free body and observe its motion; if the body stays in uniform motion reference frame is inertial.]
+
 #slide[
-  - To understand what is an inertial frame and its use in Newton's law consider the following:
-  In the reference frame of the ground, a ball at rest on the floor of a train station remains at rest, but in the reference frame of an accelerating train leaving the station, a ball initially at rest on the floor of a train car has a spontaneous acceleration toward the end of the train, in contradiction to Newton's law. Thus the reference frame of the ground is an inertial frame, but that of the accelarating train is not.
+  - Other than finding the 'right' reference frame Newton's first law helps to analyse other objects. #emph[If one free body remains at rest or in uniform motion in a given reference frame, then so will all other free bodies]
 
   - Given a reference frame that is inertial, any other reference frame in uniform translational motion relative to the first is will also be inertial!
 
@@ -108,6 +111,23 @@ Weak force (radioactive decay process) - (W, Z bosons)] ]
   #figure(image("earth.png", width: 62%))
 
 ]]
+
+#slide[#columns[ #figure(image("centrifugal_force.png", width: 69%))
+
+  #figure(image("carosel.png", width: 49%))
+  https://www.youtube.com/watch?v=78Yymgk6qrM&t=322s
+
+  #figure(image("foco.png", width: 49%))
+  https://www.youtube.com/watch?v=se84vG6bzoA&t=76s
+]]
+
+#slide[
+  #show :focus
+  _Newton's second law and Force_
+  #box(stroke: 3pt, inset: 15pt)[ _Second law:_ When viewed from an inertial frame, the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass:]
+  $ Sigma arrow(F) = m arrow(a) $
+]
+
 #slide[ = Mass
 
 - Mass is a property of and object that specifies how much resistance an object exhibit against changes in velocity. The greater the mass the less it accelerates under an applied force.
@@ -119,15 +139,12 @@ Take the unit mass as $m_1$ then define the mass of the second and third bodies 
 - Note that mass is not the same thing as _weight_ of an object. Weight depends where you measure it.]
 
 #slide[
-  #show :focus
-  _Newton's second law and Force_
-  #box(stroke: 3pt, inset: 15pt)[ _Second law:_ When viewed from an inertial frame, the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass:]
-  $ Sigma arrow(F) = m arrow(a) $
+  - The mass measurement device in Skylab consisted of small chair that could be accelerated back and forth by a spring attached to it. Instruments connected to chair measured the acceleration. Suppose that with a known standart mass of 66.9 kg placed in the chair, the bent spring produced acceleration of $0.0262 m \/ s^2$. With the standart mass removed and astronaut J.R. Lousma sitting in chair, the bent spring produced an acceleration of $0.0204 m\/s^2$. Deduce the mass of Lousma.
+  #figure(image("lousma.png", width: 59%))
 ]
-
 #slide[= Newton's second law and Force
 
-As this is a vector equation
+As the second law is a vector equation
 $ Sigma F_x = m a_x, quad Sigma F_y = m a_y, quad Sigma F_z = m a_z $
 If some of all forces on a body is zero we call it body is in equilibrium.
 $ Sigma arrow(F) = 0 $

@@ -315,4 +315,5 @@ TSWLatexianTemp*
 /notes
 /books
 /project
+*.webm
 # End of https://www.toptal.com/developers/gitignore/api/latex
