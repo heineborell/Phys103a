@@ -1,15 +1,22 @@
 952_1_online.pdf
 A closer look at tumbling toast.pdf
+Analyzing motion on a surface of revolution using the.pdf
 A story with twists and turns_ How to control the rotation of the notched.pdf
 Asymmetric rolling bodies and the phantom torque.pdf
+A unified model for the long and high jump.pdf
 A vertical race up and back down with and without drag.pdf
+Bending time_ The tubular water clock.pdf
 Bounce of a spinning ball near normal incidence.pdf
 Bouncing on a slope.pdf
 Dynamics of a bouncing ball.pdf
+Dynamics of spear throwing.pdf
 Elastic collisions on a simulated circular air track.pdf
+Experiments with a falling rod.pdf
 Flight and bounce of spinning sports balls.pdf
 Force and torque of a string on a pulley.pdf
+Graphical analysis of an oscillator with constant magnitude.pdf
 How balls roll off tables.pdf
+How the air slows a closing book.pdf
 Impact of a ball on a surface with tangential compliance.pdf
 Internal ballistics of the sling.pdf
 Investigating t for bouncing balls.pdf
@@ -19,20 +26,27 @@ Oblique angle collisions of two pendulum balls.pdf
 Oblique collision of a soft rubber disk with a rigid surface.pdf
 On cat–human interaction from the viewpoint of physics.pdf
 On the analogy between spinning disks coming to rest and merging.pdf
+Orbital motion of primordial black holes crossing Sun-like.pdf
 Orbits of Balls in a Funnel and a Spherical Surface.pdf
 Oscillation of a Ball on a Concave Surface.pdf
 Projectile motion with quadratic drag.pdf
 Quantitative analysis of a smartphone pendulum beyond.pdf
 Rattlebacks for the rest of us.pdf
 Rolling and Sliding down an Inclined Plane.pdf
+Shaping softness from hard elements.pdf
 Simple derivation of Newtonian mechanics from the.pdf
 Sliding and rolling along circular tracks in a vertical plane.pdf
 Sliding down an arbitrary curve in the presence of friction.pdf
+spool.pdf
+test.md
 The drift motion of a spinning ball on carpet.pdf
 The electric cat_ Rotation without net overall spin.pdf
 The envelope of ballistic trajectories and elliptic orbits.pdf
+The fall and bounce of pencils and other elongated objects.pdf
+The flight of Newton’s cannonball.pdf
 The hardest-hit home run.pdf
 The Kinematics of Fireworks Explosions.pdf
+The mobile phone as a free-rotation laboratory.pdf
 The motion of two identical masses connected by an ideal.pdf
 The physical origin of torque and of the rotational second.pdf
 The physics of juggling a spinning ping-pong ball.pdf

@@ -22,7 +22,7 @@
   #metropolis.divider
 
   // #set text(size: .8em, weight: "light")
-  Phys105
+  Phys103a
 
   #datetime.today().display()
 
@@ -132,7 +132,7 @@ Weak force (radioactive decay process) - (W, Z bosons)] ]
 
 - Mass is a property of and object that specifies how much resistance an object exhibit against changes in velocity. The greater the mass the less it accelerates under an applied force.
 
-Take the unit mass as $m_1$ then define the mass of the second and third bodies as $ m_2 = m_1 a_1 / a_2 ,quad m_3 = m_1 a_1 / a_3 $.
+Take the unit mass as $m_1$ then define the mass of the second and third bodies as $ m_2 = m_1 a_1 / a_2 ,quad m_3 = m_1 a_1 / a_3 $
 
 - Mass is an inherent property of an object and independent of its surroundings.
 
@@ -171,25 +171,37 @@ $ arrow(F)_("net") =arrow(F_1)+arrow(F_2)+arrow(F_3)+... $ ]
 #slide[
   #columns[ #figure(image("action.png", width: 40%))
 
-    #figure(image("apple.png", width: 80%))
+    #figure(image("apple.png", width: 53%))
     - This pair of forms is called _action-reaction pair_.
+    - Note that although action-reaction forces are equal in magnitude and opposite in direction they do not cancel because they apply to different bodies.
 
   ]
 ]
+#slide[
 
-#slide[ = Applying Newton's Laws
+  #figure(image("tugboat1.png", width: 100%))
+  #figure(image("tugboat2.png", width: 100%))
 
-- Here are the steps for attacking mechanical problems involving small number of masses acted by simple forces.
+]
+#slide[= The momentum of a Particle
 
-1- _Isolate the masses_ = Mentally divide the system that each contain a single mass. Each mass will be treated as point particle.
+- Newton's law can be expressed neatly by defining the _momentum_ of a particle. It is defined as the product of particle's mass and velocity.
+$ arrow(p)=m arrow(v) $
+- Newton's first law states that in the absence of external forces the momentum of a particle is constant or _conserved_.
+$ arrow(p)= \["constant"\] $
+- Note that if the particle mass m is constant, the the second law can be written as
+$ m arrow(a)=m frac(d arrow(v), d t)= frac(d, d t)(m arrow(v))= frac(d, d t)(arrow(p)) $]
 
-2- _Draw a force diagram for each mass_:
+#slide[
+  - The second law is then written
+  $ frac(d arrow(p), d t) = arrow(F) $
+  rate of change of momentum is equal to force.
 
-- Represent each body by a point and label them.
-- For each mass, draw a force vector starting on the mass, one for each force acting _on it_.
-- Draw only forces acting on the body!
+  - Also third law can be stated as follows: Whenever two bodies exert force on one another, the resulting changes of momentum are in equal magnitudes and opposite directions.
+  #figure(image("momentum.png", width: 90%))
 
-- Show coordinate system on the force diagram.]
+]
+
 #new-section[Applying Newton's Laws]
 #slide[= Applying Newton's Laws
 
@@ -210,6 +222,19 @@ $ F_(1 x)+F_(2 x)+ =M a_x $
 
 - Tension in the cords, ropes.]
 
+#slide[ = Applying Newton's Laws
+
+- Here are the steps for attacking mechanical problems involving small number of masses acted by simple forces.
+
+1- _Isolate the masses_ = Mentally divide the system that each contain a single mass. Each mass will be treated as point particle.
+
+2- _Draw a force diagram for each mass_:
+
+- Represent each body by a point and label them.
+- For each mass, draw a force vector starting on the mass, one for each force acting _on it_.
+- Draw only forces acting on the body!
+
+- Show coordinate system on the force diagram.]
 #slide[= Examples
 
 #figure(
