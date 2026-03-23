@@ -24,7 +24,7 @@
   // #set text(size: .8em, weight: "light")
   Phys105
 
-  Jan 16, 2025
+  #datetime.today().display()
 
 ]
 
@@ -39,11 +39,74 @@
 
   = Objectives
 
+  - Define Weight.
   - Define friction force.
-  - Distinguish between friction in a static situation
+  - Distinguish between friction in a static situation.
     and in a kinetic situation.
 ]
 
+#new-section[Applying Newton's Laws]
+
+#slide[ = Equation of Motion
+- The Newton's Second law is usually called _equations of motion_. If the force pn a particle is known, then second law determines acceleration the from this we can determine complete motion.
+#columns[
+
+  #figure(image("quote.png", width: 110%))
+  - To find a solution of the equation of motion means to find a force $arrow(F)$ and a position vector $arrow(r)(t)$ such that $arrow(F)=m arrow(a)$ is satisfied.
+
+  #figure(image("laplace.png", width: 30%))
+]]
+
+#slide[= Some particular forces
+
+- _Gravitational force:_ The force that pulls an object directly toward the center of Earth. Then weight is defined as the gravitational force that an object feels. Usually shown as $arrow(W)=m arrow(g)$. (Note that weight is an _extrinsic_ property of a body, whereas mass is _intrinsic_.)
+
+- _Normal force:_ When a body presses against a surface, the surface (even a seemingly rigid one) ­ deforms and pushes on the body with a normal force F_N that is perpendicular to the surface.
+
+- _Friction_: If we either slide or attempt to slide a body over a surface, the motion is resisted by a bonding between the body and the surface. (We will discuss this more).
+
+- Tension in the cords, ropes.]
+
+#slide[ = Applying Newton's Laws
+
+- Here are the steps for attacking mechanical problems involving small number of masses acted by simple forces.
+
+1- _Isolate the masses_ = Mentally divide the system that each contain a single mass. Each mass will be treated as point particle.
+
+2- _Draw a force diagram for each mass_:
+
+- Represent each body by a point and label them.
+- For each mass, draw a force vector starting on the mass, one for each force acting _on it_.
+- Draw only forces acting on the body!
+
+- Show coordinate system on the force diagram.]
+
+#slide[= Applying Newton's Laws
+
+3- Write the _equations of motion_.
+
+- By equations of motion we mean Newton's equations.
+
+$ F_(1 x)+F_(2 x)+ =M a_x $
+$ F_(1 y)+F_(2 y)+ =M a_y $
+- Write the _constraint_ equations.]
+#slide[= Examples
+
+#figure(
+  image("ss_3_1.png", width: 40%),
+) ]
+
+#slide[= Examples
+
+#figure(
+  image("ss_4_1.png", width: 40%),
+) ]
+
+#slide[= Examples
+
+#figure(
+  image("ss_5_1.png", width: 40%),
+) ]
 #new-section[Friction Forces]
 #slide[ = Friction
 
