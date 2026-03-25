@@ -61,7 +61,7 @@
 
 - _Gravitational force:_ The force that pulls an object directly toward the center of Earth. Then weight is defined as the gravitational force that an object feels. Usually shown as $arrow(W)=m arrow(g)$. (Note that weight is an _extrinsic_ property of a body, whereas mass is _intrinsic_.)
 
-- _Normal force:_ When a body presses against a surface, the surface (even a seemingly rigid one) ­ deforms and pushes on the body with a normal force F_N that is perpendicular to the surface.
+- _Normal force:_ When a body presses against a surface, the surface (even a seemingly rigid one) ­ deforms and pushes on the body with a normal force $F_N$ that is perpendicular to the surface.
 
 - _Friction_: If we either slide or attempt to slide a body over a surface, the motion is resisted by a bonding between the body and the surface. (We will discuss this more).
 
@@ -89,24 +89,23 @@
 
 $ F_(1 x)+F_(2 x)+ =M a_x $
 $ F_(1 y)+F_(2 y)+ =M a_y $
-- Write the _constraint_ equations.]
+- Write the _constraint_ equations. These are the equations that relate coordinates.]
 #slide[= Examples
 
-#figure(
-  image("ss_3_1.png", width: 40%),
-) ]
+#figure(image("ss_3_1.png", width: 34%))
+- Find $T_1$.]
 
 #slide[= Examples
 
-#figure(
-  image("ss_4_1.png", width: 40%),
-) ]
+#figure(image("ss_4_1.png", width: 40%))
+- Find accelaration.]
 
 #slide[= Examples
 
 #figure(
   image("ss_5_1.png", width: 40%),
-) ]
+)
+- Find tension in the rope.]
 #new-section[Friction Forces]
 #slide[ = Friction
 
